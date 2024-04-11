@@ -1,0 +1,235 @@
+2023-05-15 12:29:59: case.setup starting 
+ ---------------------------------------------------
+2023-05-15 12:30:01: case.setup success 
+ ---------------------------------------------------
+2023-05-15 12:30:51: xmlchange success <command> ./xmlchange DATM_MODE=1PT  </command>
+ ---------------------------------------------------
+2023-05-15 12:31:12: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2023-05-15 12:31:24: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2023-05-15 12:31:51: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2023-05-15 12:32:07: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2023-05-15 12:32:22: xmlchange success <command> ./xmlchange RUN_STARTDATE=2011-01-01  </command>
+ ---------------------------------------------------
+2023-05-15 12:33:35: xmlchange success <command> ./xmlchange DATM_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2023-05-15 12:33:46: xmlchange success <command> ./xmlchange DATM_YR_START=2011  </command>
+ ---------------------------------------------------
+2023-05-15 12:33:52: xmlchange success <command> ./xmlchange DATM_YR_END=2017  </command>
+ ---------------------------------------------------
+2023-05-15 12:34:04: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-05-15 12:34:13: xmlchange success <command> ./xmlchange STOP_N=7  </command>
+ ---------------------------------------------------
+2023-05-15 12:35:12: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2023-05-15 12:37:16: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-05-15 12:37:36: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-05-15 13:28:22: case.build starting 
+ ---------------------------------------------------
+2023-05-15 13:28:24: case.build error 
+ERROR: Command /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/build-namelist failed rc=255
+out=
+err=::ERROR(Build::Namelist::_parse_next): expect a F90 constant for a namelist instead got:  '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_c230220_v3.nc
+ ---------------------------------------------------
+2023-05-15 13:38:50: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-05-15 13:47:33: case.build success 
+ ---------------------------------------------------
+2023-05-15 13:48:10: case.submit starting 
+ ---------------------------------------------------
+2023-05-15 13:48:10: case.submit error 
+ERROR: Command: 'qsub -q share -l walltime=06:00:00 -A UMIN008 -v ARGS_FOR_SCRIPT='--resubmit' .case.run' failed with error 'qsub: Invalid account, available accounts:
+Project, Status, Active
+UMIN0008, Normal, True' from dir '/glade/u/home/marielj/cesm-hillslope/test-hillslope'
+ ---------------------------------------------------
+2023-05-15 13:49:45: case.run starting 226625.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 13:49:50: model execution starting 226625.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 13:51:27: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope/run'
+ ---------------------------------------------------
+2023-05-15 13:51:27: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope/run/cesm.log.226625.chadmin1.ib0.cheyenne.ucar.edu.230515-134945
+ ---------------------------------------------------
+2023-05-15 13:59:18: xmlchange success <command> ./xmlchange PROJECT=UMIN0008  </command>
+ ---------------------------------------------------
+2023-05-15 14:02:48: case.build starting 
+ ---------------------------------------------------
+2023-05-15 14:02:51: case.build error 
+ERROR: Command /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/build-namelist failed rc=255
+out=
+err=::ERROR(Build::Namelist::_parse_next): expect a equal '=' sign or '+=', instead got: /
+ ---------------------------------------------------
+2023-05-15 14:05:36: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-05-15 14:06:20: case.build success 
+ ---------------------------------------------------
+2023-05-15 14:06:50: case.submit starting 226790.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:06:50: case.submit success 226790.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:06:59: case.run starting 226789.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:07:04: model execution starting 226789.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:08:41: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope/run'
+ ---------------------------------------------------
+2023-05-15 14:08:41: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope/run/cesm.log.226789.chadmin1.ib0.cheyenne.ucar.edu.230515-140659
+ ---------------------------------------------------
+2023-05-15 14:13:03: xmlchange success <command> ./xmlchange LND_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_4_col_hillslope.nc  </command>
+ ---------------------------------------------------
+2023-05-15 14:13:15: xmlchange success <command> ./xmlchange ATM_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_4_col_hillslope.nc  </command>
+ ---------------------------------------------------
+2023-05-15 14:16:48: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-05-15 14:17:29: case.build success 
+ ---------------------------------------------------
+2023-05-15 14:25:46: case.submit starting 227087.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:25:46: case.submit success 227087.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:26:11: case.run starting 227086.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:26:16: model execution starting 227086.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-15 14:27:53: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope/run'
+ ---------------------------------------------------
+2023-05-15 14:27:53: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope/run/cesm.log.227086.chadmin1.ib0.cheyenne.ucar.edu.230515-142611
+ ---------------------------------------------------

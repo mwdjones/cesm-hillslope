@@ -1,0 +1,134 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating namelists for /glade/u/home/marielj/cesm-hillslope/test-hillslope-mct-srof-mineral
+  2023-11-19 19:05:25 atm 
+Create namelist for component datm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/data_comps_mct/datm/cime_config/buildnml
+  2023-11-19 19:05:26 lnd 
+Create namelist for component clm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../cime_config/buildnml
+  2023-11-19 19:05:26 ice 
+Create namelist for component sice
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sice/cime_config/buildnml
+  2023-11-19 19:05:26 ocn 
+Create namelist for component socn
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/socn/cime_config/buildnml
+  2023-11-19 19:05:26 rof 
+Create namelist for component srof
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/srof/cime_config/buildnml
+  2023-11-19 19:05:26 glc 
+Create namelist for component sglc
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sglc/cime_config/buildnml
+  2023-11-19 19:05:26 wav 
+Create namelist for component swav
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/swav/cime_config/buildnml
+  2023-11-19 19:05:26 iac 
+Create namelist for component siac
+   Running /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/siac/cime_config/buildnml 
+  2023-11-19 19:05:26 esp 
+Create namelist for component sesp
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sesp/cime_config/buildnml
+  2023-11-19 19:05:26 cpl 
+Create namelist for component drv
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/driver/cime_config/buildnml
+Schema validity test fails for /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../ccs_config/config_grids_mct.xml
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/campaign/cesm/cesmdata/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-mineral/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Detected model run failed, restarting
+st_archive starting
+moving /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/cesm.log.4221635.chadmin1.ib0.cheyenne.ucar.edu.231119-190523 to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/logs/cesm.log.4221635.chadmin1.ib0.cheyenne.ucar.edu.231119-190523
+moving /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/preview_run.log.4221635.chadmin1.ib0.cheyenne.ucar.edu.231119-190523 to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/logs/preview_run.log.4221635.chadmin1.ib0.cheyenne.ucar.edu.231119-190523
+-------------------------------------------
+Archiving restarts for date date(2018, 1, 1, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for datm (atm)
+Archiving restarts for clm (lnd)
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.r.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.r.2018-01-01-00000.nc
+Copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h1.2017-12.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h1.2017-12.nc
+Copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h0.2017-12.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h0.2017-12.nc
+Copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h2.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h2.2018-01-01-00000.nc
+Copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h3.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h3.2018-01-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh2.2018-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh2.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh2.2018-01-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh3.2018-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh3.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh3.2018-01-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh0.2018-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh0.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh0.2018-01-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh1.2018-01-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.rh1.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh1.2018-01-01-00000.nc
+Archiving restarts for drv (cpl)
+copying file /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.cpl.r.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.cpl.r.2018-01-01-00000.nc
+Archiving restarts for dart (esp)
+Archiving history files for datm (atm)
+Archiving history files for clm (lnd)
+copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h0.2017-12.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/lnd/hist/test-hillslope-mct-srof-mineral.clm2.h0.2017-12.nc 
+copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h1.2017-12.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/lnd/hist/test-hillslope-mct-srof-mineral.clm2.h1.2017-12.nc 
+copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h2.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/lnd/hist/test-hillslope-mct-srof-mineral.clm2.h2.2018-01-01-00000.nc 
+copying /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run/test-hillslope-mct-srof-mineral.clm2.h3.2018-01-01-00000.nc to /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/lnd/hist/test-hillslope-mct-srof-mineral.clm2.h3.2018-01-01-00000.nc 
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed
+Restoring restart from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/rpointer.lnd from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h3.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.r.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/rpointer.atm from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h2.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h0.2017-12.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.cpl.r.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh2.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh3.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh0.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/rpointer.drv from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.rh1.2018-01-01-00000.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+Restoring /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000/test-hillslope-mct-srof-mineral.clm2.h1.2017-12.nc from /glade/scratch/marielj/archive/test-hillslope-mct-srof-mineral/rest/2018-01-01-00000 to /glade/scratch/marielj/test-hillslope-mct-srof-mineral/run
+  2023-11-19 19:07:15 atm 
+Create namelist for component datm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/data_comps_mct/datm/cime_config/buildnml
+  2023-11-19 19:07:15 lnd 
+Create namelist for component clm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../cime_config/buildnml
+  2023-11-19 19:07:15 ice 
+Create namelist for component sice
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sice/cime_config/buildnml
+  2023-11-19 19:07:15 ocn 
+Create namelist for component socn
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/socn/cime_config/buildnml
+  2023-11-19 19:07:15 rof 
+Create namelist for component srof
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/srof/cime_config/buildnml
+  2023-11-19 19:07:15 glc 
+Create namelist for component sglc
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sglc/cime_config/buildnml
+  2023-11-19 19:07:15 wav 
+Create namelist for component swav
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/swav/cime_config/buildnml
+  2023-11-19 19:07:15 iac 
+Create namelist for component siac
+   Running /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/siac/cime_config/buildnml 
+  2023-11-19 19:07:16 esp 
+Create namelist for component sesp
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/components/stub_comps_mct/sesp/cime_config/buildnml
+  2023-11-19 19:07:16 cpl 
+Create namelist for component drv
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../components/cpl7/driver/cime_config/buildnml
+Schema validity test fails for /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/../ccs_config/config_grids_mct.xml
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+check for resubmit
+dout_s True 
+mach cheyenne 
+resubmit_num 0

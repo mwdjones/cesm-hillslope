@@ -1,0 +1,42 @@
+2024-03-21 11:53:52: case.setup starting 3865021.desched1
+ ---------------------------------------------------
+2024-03-21 11:53:54: case.setup success 3865021.desched1
+ ---------------------------------------------------
+2024-03-21 11:54:30: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:30: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:30: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:31: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:31: xmlchange success <command> ./xmlchange RUN_STARTDATE=2011-01-01  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:32: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:32: xmlchange success <command> ./xmlchange STOP_N=7  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:32: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:33: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:33: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2024-03-21 11:54:48: xmlchange success <command> ./xmlchange DATM_MODE=1PT  </command>
+ ---------------------------------------------------
+2024-03-21 11:55:48: xmlchange success <command> ./xmlchange DATM_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2024-03-21 11:55:58: xmlchange success <command> ./xmlchange DATM_YR_START=2011  </command>
+ ---------------------------------------------------
+2024-03-21 11:56:06: xmlchange success <command> ./xmlchange DATM_YR_END=2017  </command>
+ ---------------------------------------------------
+2024-03-21 11:57:05: case.build starting 
+ ---------------------------------------------------
+2024-03-21 11:57:07: case.build error 
+ERROR: Command /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/build-namelist failed rc=255
+out=
+err=ERROR : CLM build-namelist::CLMBuildNamelist::add_default() : No default value found for fsurdat.
+            Are defaults provided for this resolution and land mask?
+ ---------------------------------------------------
+2024-03-21 11:57:40: case.build starting 
+ ---------------------------------------------------

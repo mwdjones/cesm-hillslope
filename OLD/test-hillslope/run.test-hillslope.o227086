@@ -1,0 +1,40 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating namelists for /glade/u/home/marielj/cesm-hillslope/test-hillslope
+  2023-05-15 14:26:12 atm 
+Create namelist for component datm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cdeps/datm/cime_config/buildnml
+  2023-05-15 14:26:12 lnd 
+Create namelist for component clm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime_config/buildnml
+  2023-05-15 14:26:13 ice 
+Create namelist for component sice
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sice/cime_config/buildnml
+  2023-05-15 14:26:13 ocn 
+Create namelist for component socn
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/socn/cime_config/buildnml
+  2023-05-15 14:26:13 rof 
+Create namelist for component mosart
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/mosart//cime_config/buildnml
+  2023-05-15 14:26:13 glc 
+Create namelist for component sglc
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sglc/cime_config/buildnml
+  2023-05-15 14:26:13 wav 
+Create namelist for component swav
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/swav/cime_config/buildnml
+  2023-05-15 14:26:13 esp 
+Create namelist for component sesp
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sesp/cime_config/buildnml
+  2023-05-15 14:26:13 cpl 
+Create namelist for component drv
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cmeps/cime_config/buildnml
+Writing nuopc_runconfig for components ['CPL', 'ATM', 'LND']
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/scratch/marielj/test-hillslope/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/p/cesmdata/cseg/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1 /glade/scratch/marielj/test-hillslope/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope/run/cesm.log.227086.chadmin1.ib0.cheyenne.ucar.edu.230515-142611

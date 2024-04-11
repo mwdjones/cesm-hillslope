@@ -1,0 +1,283 @@
+2023-08-21 09:11:10: case.setup starting 
+ ---------------------------------------------------
+2023-08-21 09:11:11: case.setup success 
+ ---------------------------------------------------
+2023-08-21 09:12:01: case.setup starting 
+ ---------------------------------------------------
+2023-08-21 09:12:02: case.setup success 
+ ---------------------------------------------------
+2023-08-21 09:17:11: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-08-21 09:23:26: case.build success 
+ ---------------------------------------------------
+2023-08-21 09:28:50: case.submit starting 2750831.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:28:50: case.submit success 2750831.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:29:07: case.run starting 2750830.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:29:13: model execution starting 2750830.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:33:40: model execution success 2750830.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:33:40: case.run success 2750830.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:34:06: st_archive starting 2750831.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-21 09:34:06: st_archive success 2750831.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:19:57: build.clean starting 
+ ---------------------------------------------------
+2023-08-22 11:19:58: build.clean error 
+ERROR: module command /glade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/lmod python purge  failed with message:
+/glade/u/apps/ch/opt/lmod/8.1.7/bin/lua: error loading module 'tcl2lua' from file '/glade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/../lib/tcl2lua.so':
+	libtcl8.6.so: cannot open shared object file: No such file or directory
+stack traceback:
+	[C]: ?
+	[C]: in function 'require'
+	...u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/utils.lua:828: in function 'build_runTCLprog'
+	...u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/utils.lua:833: in main chunk
+	[C]: in function 'require'
+	...pps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/colorize.lua:43: in main chunk
+	[C]: in function 'require'
+	...lade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/lmod:110: in main chunk
+	[C]: ?
+ ---------------------------------------------------
+2023-08-22 11:20:33: build.clean starting 
+ ---------------------------------------------------
+2023-08-22 11:20:33: build.clean error 
+ERROR: module command /glade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/lmod python purge  failed with message:
+/glade/u/apps/ch/opt/lmod/8.1.7/bin/lua: error loading module 'tcl2lua' from file '/glade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/../lib/tcl2lua.so':
+	libtcl8.6.so: cannot open shared object file: No such file or directory
+stack traceback:
+	[C]: ?
+	[C]: in function 'require'
+	...u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/utils.lua:828: in function 'build_runTCLprog'
+	...u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/utils.lua:833: in main chunk
+	[C]: in function 'require'
+	...pps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/colorize.lua:43: in main chunk
+	[C]: in function 'require'
+	...lade/u/apps/ch/opt/lmod/7.5.3/lmod/lmod/libexec/lmod:110: in main chunk
+	[C]: ?
+ ---------------------------------------------------
+2023-08-22 11:29:42: build.clean starting 
+ ---------------------------------------------------
+2023-08-22 11:29:44: build.clean success 
+ ---------------------------------------------------
+2023-08-22 11:31:41: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-08-22 11:38:06: case.build success 
+ ---------------------------------------------------
+2023-08-22 11:51:47: case.submit starting 2787925.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:51:47: case.submit success 2787925.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:52:09: case.run starting 2787919.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:52:14: model execution starting 2787919.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:57:34: model execution success 2787919.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:57:34: case.run success 2787919.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:58:34: st_archive starting 2787925.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-08-22 11:58:35: st_archive success 2787925.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:17:30: xmlchange success <command> ./xmlchange RUN_STARTDATE=2004-01-01  </command>
+ ---------------------------------------------------
+2023-09-25 12:17:37: xmlchange success <command> ./xmlchange STOP_N=14  </command>
+ ---------------------------------------------------
+2023-09-25 12:17:47: build.clean starting 
+ ---------------------------------------------------
+2023-09-25 12:17:49: build.clean success 
+ ---------------------------------------------------
+2023-09-25 12:20:54: case.build starting 
+ ---------------------------------------------------
+2023-09-25 12:22:12: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-09-25 12:28:06: case.build success 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-09-25 12:28:12: case.build error 
+ERROR: File /glade/u/home/marielj/cesm-hillslope/test-hillslope-mct-srof-lagg/env_build.xml appears to have changed without a corresponding invalidation.
+ ---------------------------------------------------
+2023-09-25 12:29:30: case.submit starting 3460584.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:29:30: case.submit success 3460584.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:29:59: case.run starting 3460581.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:30:05: model execution starting 3460581.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:39:21: model execution success 3460581.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:39:21: case.run success 3460581.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:41:12: st_archive starting 3460584.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-09-25 12:41:12: st_archive success 3460584.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------

@@ -1,0 +1,148 @@
+2024-03-29 10:06:22: case.setup starting 3944833.desched1
+ ---------------------------------------------------
+2024-03-29 10:06:24: case.setup success 3944833.desched1
+ ---------------------------------------------------
+2024-03-29 10:07:23: xmlchange success <command> ./xmlchange DATM_MODE=1PT  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:23: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:24: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:24: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:24: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:24: xmlchange success <command> ./xmlchange RUN_STARTDATE=2011-01-01  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:25: xmlchange success <command> ./xmlchange DATM_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:25: xmlchange success <command> ./xmlchange DATM_YR_START=2011  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:25: xmlchange success <command> ./xmlchange DATM_YR_END=2017  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:26: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:26: xmlchange success <command> ./xmlchange STOP_N=7  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:27: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:27: xmlchange success <command> ./xmlchange ATM_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:27: xmlchange success <command> ./xmlchange LND_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-29 10:07:27: xmlchange success <command> ./xmlchange MASK_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-29 10:08:55: xmlchange success <command> ./xmlchange RESUBMIT=3,STOP_N=50,STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-03-29 10:10:45: xmlchange success <command> ./xmlchange RUN_STARTDATE=0000-01-01  </command>
+ ---------------------------------------------------
+2024-03-29 10:10:59: xmlchange success <command> ./xmlchange RESUBMIT=3,STOP_N=100,STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-03-29 10:11:05: case.build starting 
+ ---------------------------------------------------
+2024-03-29 10:11:06: case.build error 
+ERROR: Variable 'taxmode' from file 'user_nl_datm' is not in the namelist definition.
+ ---------------------------------------------------
+2024-03-29 10:11:47: case.build starting 
+ ---------------------------------------------------
+2024-03-29 10:11:48: case.build error 
+ERROR: input stream mod can only be of the form streamname:var=value(s)
+ ---------------------------------------------------
+2024-03-29 10:12:04: case.build starting 
+ ---------------------------------------------------
+2024-03-29 10:18:12: case.build success 
+ ---------------------------------------------------
+2024-03-29 10:21:07: case.submit starting 3945299.desched1
+ ---------------------------------------------------
+2024-03-29 10:21:07: case.submit success 3945299.desched1
+ ---------------------------------------------------
+2024-03-29 10:21:17: case.run starting 3945292.desched1
+ ---------------------------------------------------
+2024-03-29 10:21:20: model execution starting 3945292.desched1
+ ---------------------------------------------------
+2024-03-29 10:21:33: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/derecho-spinup-baseparams/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/derecho-spinup-baseparams/run'
+ ---------------------------------------------------
+2024-03-29 10:21:33: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/derecho-spinup-baseparams/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/derecho-spinup-baseparams/run/cesm.log.3945292.desched1.240329-102117
+ ---------------------------------------------------
+2024-03-29 10:25:16: xmlchange success <command> ./xmlchange RUN_STARTDATE=0001-01-01  </command>
+ ---------------------------------------------------
+2024-03-29 10:25:23: build.clean starting 
+ ---------------------------------------------------
+2024-03-29 10:25:25: build.clean success 
+ ---------------------------------------------------
+2024-03-29 10:25:28: case.build starting 
+ ---------------------------------------------------
+2024-03-29 10:31:36: case.build success 
+ ---------------------------------------------------
+2024-03-29 10:35:18: case.submit starting 3945434.desched1
+ ---------------------------------------------------
+2024-03-29 10:35:18: case.submit success 3945434.desched1
+ ---------------------------------------------------
+2024-03-29 10:35:26: case.run starting 3945433.desched1
+ ---------------------------------------------------
+2024-03-29 10:35:30: model execution starting 3945433.desched1
+ ---------------------------------------------------
+2024-03-29 12:12:43: model execution success 3945433.desched1
+ ---------------------------------------------------
+2024-03-29 12:12:47: case.run success 3945433.desched1
+ ---------------------------------------------------
+2024-03-29 12:13:12: st_archive starting 3945434.desched1
+ ---------------------------------------------------
+2024-03-29 12:13:21: st_archive success 3945434.desched1
+ ---------------------------------------------------
+2024-03-29 13:10:50: xmlchange success <command> ./xmlchange RESUBMIT=0  </command>
+ ---------------------------------------------------
+2024-03-29 13:11:27: xmlchange success <command> ./xmlchange STOP_N=300  </command>
+ ---------------------------------------------------
+2024-03-29 13:11:35: build.clean starting 
+ ---------------------------------------------------
+2024-03-29 13:11:38: build.clean success 
+ ---------------------------------------------------
+2024-03-29 13:12:03: case.build starting 
+ ---------------------------------------------------
+2024-03-29 13:18:59: case.build success 
+ ---------------------------------------------------
+2024-03-29 14:14:09: case.submit starting 3947186.desched1
+ ---------------------------------------------------
+2024-03-29 14:14:09: case.submit success 3947186.desched1
+ ---------------------------------------------------
+2024-03-29 14:14:21: case.run starting 3947185.desched1
+ ---------------------------------------------------
+2024-03-29 14:14:31: model execution starting 3947185.desched1
+ ---------------------------------------------------
+2024-03-29 14:14:40: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/derecho-spinup-baseparams/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/derecho-spinup-baseparams/run'
+ ---------------------------------------------------
+2024-03-29 14:14:40: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/derecho-spinup-baseparams/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/derecho-spinup-baseparams/run/cesm.log.3947185.desched1.240329-141421
+ ---------------------------------------------------
+2024-03-29 14:20:19: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2024-03-29 14:20:32: build.clean starting 
+ ---------------------------------------------------
+2024-03-29 14:20:35: build.clean success 
+ ---------------------------------------------------
+2024-03-29 14:20:40: case.build starting 
+ ---------------------------------------------------
+2024-03-29 14:26:55: case.build success 
+ ---------------------------------------------------
+2024-03-29 14:27:08: case.submit starting 3947249.desched1
+ ---------------------------------------------------
+2024-03-29 14:27:08: case.submit success 3947249.desched1
+ ---------------------------------------------------
+2024-03-29 14:27:17: case.run starting 3947248.desched1
+ ---------------------------------------------------
+2024-03-29 14:27:23: model execution starting 3947248.desched1
+ ---------------------------------------------------
+2024-03-29 19:16:19: model execution success 3947248.desched1
+ ---------------------------------------------------
+2024-03-29 19:16:20: case.run success 3947248.desched1
+ ---------------------------------------------------
+2024-03-29 19:16:50: st_archive starting 3947249.desched1
+ ---------------------------------------------------
+2024-03-29 19:17:02: st_archive success 3947249.desched1
+ ---------------------------------------------------

@@ -1,0 +1,181 @@
+2023-05-16 08:45:29: case.setup starting 
+ ---------------------------------------------------
+2023-05-16 08:45:31: case.setup success 
+ ---------------------------------------------------
+2023-05-16 08:45:57: xmlchange success <command> ./xmlchange DATM_MODE=CLM1PT  </command>
+ ---------------------------------------------------
+2023-05-16 08:46:10: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2023-05-16 08:46:22: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2023-05-16 08:46:37: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2023-05-16 08:46:49: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2023-05-16 08:47:06: xmlchange success <command> ./xmlchange RUN_STARTDATE=2011-01-01  </command>
+ ---------------------------------------------------
+2023-05-16 08:48:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2023-05-16 08:48:26: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2011  </command>
+ ---------------------------------------------------
+2023-05-16 08:48:37: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2017  </command>
+ ---------------------------------------------------
+2023-05-16 08:48:47: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-05-16 08:49:04: xmlchange success <command> ./xmlchange STOP_N=7  </command>
+ ---------------------------------------------------
+2023-05-16 08:49:35: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2023-05-16 08:50:07: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-05-16 08:50:16: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-05-16 08:50:33: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-05-16 08:50:44: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-05-16 08:59:12: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-05-16 09:06:02: case.build success 
+ ---------------------------------------------------
+2023-05-16 09:07:16: case.submit starting 239205.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:07:16: case.submit success 239205.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:07:36: case.run starting 239204.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:07:41: model execution starting 239204.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:09:25: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope-mct/run'
+ ---------------------------------------------------
+2023-05-16 09:09:25: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope-mct/run/cesm.log.239204.chadmin1.ib0.cheyenne.ucar.edu.230516-090736
+ ---------------------------------------------------
+2023-05-16 09:18:11: build.clean starting 
+ ---------------------------------------------------
+2023-05-16 09:18:14: build.clean success 
+ ---------------------------------------------------
+2023-05-16 09:20:20: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-05-16 09:27:01: case.build success 
+ ---------------------------------------------------
+2023-05-16 09:29:50: case.submit starting 239384.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:29:50: case.submit success 239384.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:29:54: case.run starting 239382.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:30:00: model execution starting 239382.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-05-16 09:31:46: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope-mct/run'
+ ---------------------------------------------------
+2023-05-16 09:31:46: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope-mct/run/cesm.log.239382.chadmin1.ib0.cheyenne.ucar.edu.230516-092954
+ ---------------------------------------------------
+2023-05-16 09:49:53: build.clean starting 
+ ---------------------------------------------------
+2023-05-16 09:49:57: build.clean success 
+ ---------------------------------------------------
+2023-05-16 09:50:30: case.build starting 
+ ---------------------------------------------------
+2023-05-16 09:50:33: case.build error 
+ERROR: Command /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/build-namelist failed rc=255
+out=
+err=ERROR : CLM build-namelist::CLMBuildNamelist::process_namelist_commandline_infile() : Invalid namelist variable in '-infile' /glade/u/home/marielj/cesm-hillslope/test-hillslope-mct/Buildconf/clmconf/namelist.
+ ERROR: in _validate_pair (package Build::NamelistDefinition): Variable name frivinp_rtm not found in /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/namelist_files/namelist_definition_drv.xml, /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/namelist_files/namelist_definition_drv_flds.xml, /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/namelist_files/namelist_definition_ctsm.xml
+ ---------------------------------------------------
+2023-05-16 09:55:06: case.build starting 
+ ---------------------------------------------------
+2023-05-16 09:55:56: build.clean starting 
+ ---------------------------------------------------
+2023-05-16 09:55:57: build.clean success 
+ ---------------------------------------------------
+2023-05-16 09:55:57: case.build error 
+[Errno 2] No such file or directory: '/glade/scratch/marielj/test-hillslope-mct/bld/mct.bldlog.230516-095506'
+ ---------------------------------------------------

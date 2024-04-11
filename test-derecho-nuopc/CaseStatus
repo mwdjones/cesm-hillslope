@@ -1,0 +1,257 @@
+2024-03-28 08:52:55: case.setup starting 3937061.desched1
+ ---------------------------------------------------
+2024-03-28 08:52:57: case.setup success 3937061.desched1
+ ---------------------------------------------------
+2024-03-28 08:53:16: xmlchange success <command> ./xmlchange DATM_MODE=1PT  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:17: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:17: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:17: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:18: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:18: xmlchange success <command> ./xmlchange RUN_STARTDATE=2011-01-01  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:18: xmlchange success <command> ./xmlchange DATM_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:19: xmlchange success <command> ./xmlchange DATM_YR_START=2011  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:19: xmlchange success <command> ./xmlchange DATM_YR_END=2017  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:19: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:20: xmlchange success <command> ./xmlchange STOP_N=7  </command>
+ ---------------------------------------------------
+2024-03-28 08:53:20: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2024-03-28 08:54:52: xmlchange success <command> ./xmlchange ATM_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg_cdf5.nc  </command>
+ ---------------------------------------------------
+2024-03-28 08:55:05: xmlchange success <command> ./xmlchange LND_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg_cdf5.nc  </command>
+ ---------------------------------------------------
+2024-03-28 08:55:15: xmlchange success <command> ./xmlchange MASK_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg_cdf5.nc  </command>
+ ---------------------------------------------------
+2024-03-28 08:56:40: case.build starting 
+ ---------------------------------------------------
+2024-03-28 09:02:53: case.build success 
+ ---------------------------------------------------
+2024-03-28 09:03:28: case.submit starting 3937245.desched1
+ ---------------------------------------------------
+2024-03-28 09:03:28: case.submit success 3937245.desched1
+ ---------------------------------------------------
+2024-03-28 10:24:05: case.run starting 3937244.desched1
+ ---------------------------------------------------
+2024-03-28 10:24:09: model execution starting 3937244.desched1
+ ---------------------------------------------------
+2024-03-28 10:25:40: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/test-derecho-nuopc/run'
+ ---------------------------------------------------
+2024-03-28 10:25:40: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/test-derecho-nuopc/run/cesm.log.3937244.desched1.240328-102405
+ ---------------------------------------------------
+2024-03-28 10:30:16: build.clean starting 
+ ---------------------------------------------------
+2024-03-28 10:30:18: build.clean success 
+ ---------------------------------------------------
+2024-03-28 10:30:24: case.build starting 
+ ---------------------------------------------------
+2024-03-28 10:36:26: case.build success 
+ ---------------------------------------------------
+2024-03-28 10:37:16: case.submit starting 3938661.desched1
+ ---------------------------------------------------
+2024-03-28 10:37:16: case.submit success 3938661.desched1
+ ---------------------------------------------------
+2024-03-28 10:45:58: case.run starting 3938659.desched1
+ ---------------------------------------------------
+2024-03-28 10:46:01: model execution starting 3938659.desched1
+ ---------------------------------------------------
+2024-03-28 10:46:08: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/test-derecho-nuopc/run'
+ ---------------------------------------------------
+2024-03-28 10:46:08: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/test-derecho-nuopc/run/cesm.log.3938659.desched1.240328-104558
+ ---------------------------------------------------
+2024-03-28 10:53:30: xmlchange success <command> ./xmlchange ATM_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-28 10:53:31: xmlchange success <command> ./xmlchange LND_DOMAIN_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-28 10:53:31: xmlchange success <command> ./xmlchange MASK_MESH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/ESMFmesh_US-MBP_lagg.nc  </command>
+ ---------------------------------------------------
+2024-03-28 10:53:42: build.clean starting 
+ ---------------------------------------------------
+2024-03-28 10:53:44: build.clean success 
+ ---------------------------------------------------
+2024-03-28 10:53:49: case.build starting 
+ ---------------------------------------------------
+2024-03-28 11:00:07: case.build success 
+ ---------------------------------------------------
+2024-03-28 11:00:45: case.submit starting 3938990.desched1
+ ---------------------------------------------------
+2024-03-28 11:00:45: case.submit success 3938990.desched1
+ ---------------------------------------------------
+2024-03-28 11:23:48: case.run starting 3938989.desched1
+ ---------------------------------------------------
+2024-03-28 11:23:53: model execution starting 3938989.desched1
+ ---------------------------------------------------
+2024-03-28 11:23:59: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/test-derecho-nuopc/run'
+ ---------------------------------------------------
+2024-03-28 11:23:59: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/test-derecho-nuopc/run/cesm.log.3938989.desched1.240328-112348
+ ---------------------------------------------------
+2024-03-28 11:47:27: build.clean starting 
+ ---------------------------------------------------
+2024-03-28 11:47:29: build.clean success 
+ ---------------------------------------------------
+2024-03-28 11:47:57: case.build starting 
+ ---------------------------------------------------
+2024-03-28 11:54:27: case.build success 
+ ---------------------------------------------------
+2024-03-28 12:22:30: case.submit starting 3939387.desched1
+ ---------------------------------------------------
+2024-03-28 12:22:30: case.submit success 3939387.desched1
+ ---------------------------------------------------
+2024-03-28 13:56:05: case.run starting 3939386.desched1
+ ---------------------------------------------------
+2024-03-28 13:56:08: model execution starting 3939386.desched1
+ ---------------------------------------------------
+2024-03-28 14:02:54: model execution success 3939386.desched1
+ ---------------------------------------------------
+2024-03-28 14:02:54: case.run success 3939386.desched1
+ ---------------------------------------------------
+2024-03-28 14:03:14: st_archive starting 3939387.desched1
+ ---------------------------------------------------
+2024-03-28 14:03:21: st_archive success 3939387.desched1
+ ---------------------------------------------------
+2024-04-01 12:06:52: build.clean starting 
+ ---------------------------------------------------
+2024-04-01 12:06:55: build.clean success 
+ ---------------------------------------------------
+2024-04-01 12:07:02: case.build starting 
+ ---------------------------------------------------
+2024-04-01 12:20:03: build.clean starting 
+ ---------------------------------------------------
+2024-04-01 12:20:05: build.clean success 
+ ---------------------------------------------------
+2024-04-01 12:22:16: case.build starting 
+ ---------------------------------------------------
+2024-04-01 12:28:32: case.build success 
+ ---------------------------------------------------
+2024-04-01 12:29:24: case.submit starting 3986548.desched1
+ ---------------------------------------------------
+2024-04-01 12:29:24: case.submit success 3986548.desched1
+ ---------------------------------------------------
+2024-04-01 12:30:09: case.run starting 3986547.desched1
+ ---------------------------------------------------
+2024-04-01 12:30:16: model execution starting 3986547.desched1
+ ---------------------------------------------------
+2024-04-01 12:37:15: model execution success 3986547.desched1
+ ---------------------------------------------------
+2024-04-01 12:37:15: case.run success 3986547.desched1
+ ---------------------------------------------------
+2024-04-01 12:37:53: st_archive starting 3986548.desched1
+ ---------------------------------------------------
+2024-04-01 12:37:54: st_archive success 3986548.desched1
+ ---------------------------------------------------
+2024-04-04 09:50:34: build.clean starting 
+ ---------------------------------------------------
+2024-04-04 09:50:37: build.clean success 
+ ---------------------------------------------------
+2024-04-11 08:52:10: build.clean starting 
+ ---------------------------------------------------
+2024-04-11 08:52:11: build.clean success 
+ ---------------------------------------------------
+2024-04-11 08:52:16: case.build starting 
+ ---------------------------------------------------
+2024-04-11 08:58:21: case.build success 
+ ---------------------------------------------------
+2024-04-11 08:58:33: case.submit starting 4083676.desched1
+ ---------------------------------------------------
+2024-04-11 08:58:33: case.submit success 4083676.desched1
+ ---------------------------------------------------
+2024-04-11 08:58:45: case.run starting 4083675.desched1
+ ---------------------------------------------------
+2024-04-11 08:58:48: model execution starting 4083675.desched1
+ ---------------------------------------------------
+2024-04-11 09:05:39: model execution success 4083675.desched1
+ ---------------------------------------------------
+2024-04-11 09:05:39: case.run success 4083675.desched1
+ ---------------------------------------------------
+2024-04-11 09:05:50: st_archive starting 4083676.desched1
+ ---------------------------------------------------
+2024-04-11 09:05:52: st_archive success 4083676.desched1
+ ---------------------------------------------------
+2024-04-11 09:10:59: build.clean starting 
+ ---------------------------------------------------
+2024-04-11 09:11:01: build.clean success 
+ ---------------------------------------------------
+2024-04-11 09:11:06: case.build starting 
+ ---------------------------------------------------
+2024-04-11 09:17:00: case.build success 
+ ---------------------------------------------------
+2024-04-11 09:20:14: case.submit starting 4083778.desched1
+ ---------------------------------------------------
+2024-04-11 09:20:14: case.submit success 4083778.desched1
+ ---------------------------------------------------
+2024-04-11 09:20:21: case.run starting 4083777.desched1
+ ---------------------------------------------------
+2024-04-11 09:20:25: model execution starting 4083777.desched1
+ ---------------------------------------------------
+2024-04-11 09:20:31: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/test-derecho-nuopc/run'
+ ---------------------------------------------------
+2024-04-11 09:20:31: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/test-derecho-nuopc/run/cesm.log.4083777.desched1.240411-092021
+ ---------------------------------------------------
+2024-04-11 09:27:59: build.clean starting 
+ ---------------------------------------------------
+2024-04-11 09:28:01: build.clean success 
+ ---------------------------------------------------
+2024-04-11 09:28:05: case.build starting 
+ ---------------------------------------------------
+2024-04-11 09:34:01: case.build success 
+ ---------------------------------------------------
+2024-04-11 09:35:21: case.submit starting 4083867.desched1
+ ---------------------------------------------------
+2024-04-11 09:35:21: case.submit success 4083867.desched1
+ ---------------------------------------------------
+2024-04-11 09:35:36: case.run starting 4083866.desched1
+ ---------------------------------------------------
+2024-04-11 09:35:38: model execution starting 4083866.desched1
+ ---------------------------------------------------
+2024-04-11 09:35:46: model execution error 
+ERROR: Command: 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/derecho/scratch/marielj/test-derecho-nuopc/run'
+ ---------------------------------------------------
+2024-04-11 09:35:46: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/test-derecho-nuopc/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/derecho/scratch/marielj/test-derecho-nuopc/run/cesm.log.4083866.desched1.240411-093536
+ ---------------------------------------------------
+2024-04-11 09:40:12: build.clean starting 
+ ---------------------------------------------------
+2024-04-11 09:40:15: build.clean success 
+ ---------------------------------------------------
+2024-04-11 09:40:19: case.build starting 
+ ---------------------------------------------------
+2024-04-11 09:46:17: case.build success 
+ ---------------------------------------------------
+2024-04-11 09:46:35: case.submit starting 4083948.desched1
+ ---------------------------------------------------
+2024-04-11 09:46:35: case.submit success 4083948.desched1
+ ---------------------------------------------------
+2024-04-11 09:46:43: case.run starting 4083947.desched1
+ ---------------------------------------------------
+2024-04-11 09:46:46: model execution starting 4083947.desched1
+ ---------------------------------------------------
+2024-04-11 09:53:28: model execution success 4083947.desched1
+ ---------------------------------------------------
+2024-04-11 09:53:28: case.run success 4083947.desched1
+ ---------------------------------------------------
+2024-04-11 09:53:39: st_archive starting 4083948.desched1
+ ---------------------------------------------------
+2024-04-11 09:53:42: st_archive success 4083948.desched1
+ ---------------------------------------------------

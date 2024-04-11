@@ -1,0 +1,26 @@
+&comp_inparm 
+
+ fsurdat = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth_measparam.nc'
+
+ use_hillslope = .true.
+
+ use_hillslope_routing = .true.
+
+ use_init_interp = .true.
+
+ hillslope_pft_distribution_method = 'FromFile'
+
+ hillslope_soil_profile_method = 'FromFile'
+
+ hist_nhtfrq = 0,0,-24,-24
+
+ hist_mfilt = 1,1,365,365
+
+ hist_fincl2 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl3 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl4 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ paramfile = '/glade/u/home/marielj/cesm-hillslope/calibration-runs/params/SLATOP/params_modified_SLATOP_v3.nc'
+/ 

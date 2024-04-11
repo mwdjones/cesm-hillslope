@@ -1,0 +1,57 @@
+Traceback (most recent call last):
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 1331, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/http/client.py", line 946, in connect
+    self.sock = self._create_connection(
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/glade/u/home/marielj/cesm-hillslope/bayes-opt-full.py", line 49, in <module>
+    dt1 =pd.read_csv(infile1, skiprows = 1, sep = ",",
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>

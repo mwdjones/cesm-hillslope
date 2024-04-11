@@ -1,0 +1,27 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Traceback (most recent call last):
+  File "/var/spool/pbs/mom_priv/jobs/4334543.chadmin1.ib0.cheyenne.ucar.edu.SC", line 75, in <module>
+    _main_func(__doc__)
+  File "/var/spool/pbs/mom_priv/jobs/4334543.chadmin1.ib0.cheyenne.ucar.edu.SC", line 70, in _main_func
+    success = case.case_run(skip_pnl=skip_pnl, set_continue_run=set_continue_run, submit_resubmits=resubmit)
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/case/case_run.py", line 485, in case_run
+    lid = _run_model(self, lid, skip_pnl, da_cycle=cycle)
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/case/case_run.py", line 282, in _run_model
+    is_batch=is_batch,
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/utils.py", line 2446, in run_and_log_case_status
+    rv = func()
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/case/case_run.py", line 267, in <lambda>
+    functor = lambda: _run_model_impl(case, lid, skip_pnl=skip_pnl, da_cycle=da_cycle)
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/case/case_run.py", line 98, in _run_model_impl
+    _pre_run_check(case, lid, skip_pnl=skip_pnl, da_cycle=da_cycle)
+  File "/glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/case/case_run.py", line 52, in _pre_run_check
+    shutil.rmtree(os.path.join(rundir, "timing"))
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/shutil.py", line 494, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/shutil.py", line 432, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onerror)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/shutil.py", line 452, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/shutil.py", line 450, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+FileNotFoundError: [Errno 2] No such file or directory: 'model_timing_20040101_00000.0'

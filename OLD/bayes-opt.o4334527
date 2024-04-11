@@ -1,0 +1,21 @@
+/glade/u/home/marielj/cesm-hillslope/bayes-opt-full.py:227: DeprecationWarning: 
+Passing acquisition function parameters or gaussian process parameters to maximize
+is no longer supported, and will cause an error in future releases. Instead,
+please use the "set_gp_params" method to set the gp params, and pass an instance
+ of bayes_opt.util.UtilityFunction using the acquisition_function argument
+
+  clm_optimizer.maximize(init_points = 5, n_iter = 0,
+Value successfully changed
+New value added
+Traceback (most recent call last):
+  File "/glade/u/home/marielj/cesm-hillslope/bayes-opt-full.py", line 227, in <module>
+    clm_optimizer.maximize(init_points = 5, n_iter = 0,
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/bayes_opt/bayesian_optimization.py", line 311, in maximize
+    self.probe(x_probe, lazy=False)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/bayes_opt/bayesian_optimization.py", line 208, in probe
+    self._space.probe(params)
+  File "/glade/work/marielj/conda-envs/ncdf/lib/python3.9/site-packages/bayes_opt/target_space.py", line 236, in probe
+    target = self.target_func(**params)
+  File "/glade/u/home/marielj/cesm-hillslope/bayes-opt-full.py", line 189, in blackbox_clm_wte
+    mod = -np.array(HILLSLOPEcalibcol.sel(column = 1).ZWT).reshape(365) #take SPECIFICALLY the bog water table
+NameError: name 'HILLSLOPEcalibcol' is not defined

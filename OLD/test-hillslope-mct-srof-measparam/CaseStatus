@@ -1,0 +1,679 @@
+2023-11-06 10:53:21: case.setup starting 
+ ---------------------------------------------------
+2023-11-06 10:53:24: case.setup success 
+ ---------------------------------------------------
+2023-11-06 10:54:27: case.setup starting 
+ ---------------------------------------------------
+2023-11-06 10:54:29: case.setup success 
+ ---------------------------------------------------
+2023-11-07 09:42:35: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-07 09:49:01: case.build success 
+ ---------------------------------------------------
+2023-11-07 09:56:38: case.submit starting 4097722.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 09:56:38: case.submit success 4097722.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 09:56:43: case.run starting 4097721.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 09:56:50: model execution starting 4097721.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 09:58:30: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope-mct-srof-measparam/run'
+ ---------------------------------------------------
+2023-11-07 09:58:30: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope-mct-srof-measparam/run/cesm.log.4097721.chadmin1.ib0.cheyenne.ucar.edu.231107-095643
+ ---------------------------------------------------
+2023-11-07 10:02:32: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-07 10:03:57: case.build success 
+ ---------------------------------------------------
+2023-11-07 10:04:31: case.submit starting 4097742.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:04:31: case.submit success 4097742.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:04:37: case.run starting 4097741.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:04:42: model execution starting 4097741.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:06:21: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '' from dir '/glade/scratch/marielj/test-hillslope-mct-srof-measparam/run'
+ ---------------------------------------------------
+2023-11-07 10:06:21: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope-mct-srof-measparam/run/cesm.log.4097741.chadmin1.ib0.cheyenne.ucar.edu.231107-100437
+ ---------------------------------------------------
+2023-11-07 10:15:44: build.clean starting 
+ ---------------------------------------------------
+2023-11-07 10:15:47: build.clean success 
+ ---------------------------------------------------
+2023-11-07 10:16:16: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-07 10:22:32: case.build success 
+ ---------------------------------------------------
+2023-11-07 10:25:42: case.submit starting 4097786.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:25:42: case.submit success 4097786.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:25:46: case.run starting 4097785.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:25:51: model execution starting 4097785.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:31:37: model execution success 4097785.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:31:37: case.run success 4097785.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:31:46: st_archive starting 4097786.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 10:31:46: st_archive success 4097786.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:15:15: xmlchange success <command> ./xmlchange RUN_STARTDATE=1990-01-01  </command>
+ ---------------------------------------------------
+2023-11-07 11:15:54: xmlchange success <command> ./xmlchange STOP_N=28  </command>
+ ---------------------------------------------------
+2023-11-07 11:16:05: build.clean starting 
+ ---------------------------------------------------
+2023-11-07 11:16:08: build.clean success 
+ ---------------------------------------------------
+2023-11-07 11:16:29: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-07 11:23:50: case.build success 
+ ---------------------------------------------------
+2023-11-07 11:45:15: case.submit starting 4098212.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:45:15: case.submit success 4098212.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:45:21: case.run starting 4098211.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:45:26: model execution starting 4098211.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:57:07: model execution success 4098211.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:57:07: case.run success 4098211.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:57:20: st_archive starting 4098212.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 11:57:22: st_archive success 4098212.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:16:47: build.clean starting 
+ ---------------------------------------------------
+2023-11-07 12:16:55: build.clean success 
+ ---------------------------------------------------
+2023-11-07 12:17:47: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-07 12:24:39: case.build success 
+ ---------------------------------------------------
+2023-11-07 12:34:44: case.submit starting 4098344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:34:44: case.submit success 4098344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:34:48: case.run starting 4098343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:34:53: model execution starting 4098343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:49:29: model execution success 4098343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:49:29: case.run success 4098343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:49:41: st_archive starting 4098344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-07 12:49:43: st_archive success 4098344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 17:49:34: build.clean starting 
+ ---------------------------------------------------
+2023-11-10 17:49:38: build.clean success 
+ ---------------------------------------------------
+2023-11-10 17:49:59: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-10 17:56:10: case.build success 
+ ---------------------------------------------------
+2023-11-10 17:58:25: case.submit starting 4146497.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 17:58:25: case.submit success 4146497.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 17:58:31: case.run starting 4146496.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 17:58:38: model execution starting 4146496.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:27: model execution success 4146496.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:28: case.run success 4146496.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:42: st_archive starting 4146497.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:44: st_archive success 4146497.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:20:33: build.clean starting 
+ ---------------------------------------------------
+2023-11-10 18:20:41: build.clean success 
+ ---------------------------------------------------
+2023-11-10 18:21:17: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-10 18:28:08: case.build success 
+ ---------------------------------------------------
+2023-11-11 17:23:36: case.submit starting 4152222.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:23:36: case.submit success 4152222.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:23:43: case.run starting 4152221.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:23:48: model execution starting 4152221.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:45:10: model execution success 4152221.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:45:10: case.run success 4152221.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:45:47: st_archive starting 4152222.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-11 17:45:49: st_archive success 4152222.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:01:57: build.clean starting 
+ ---------------------------------------------------
+2023-11-14 12:02:02: build.clean success 
+ ---------------------------------------------------
+2023-11-14 12:02:39: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-14 12:09:05: case.build success 
+ ---------------------------------------------------
+2023-11-14 12:09:43: case.submit starting 4178276.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:09:43: case.submit success 4178276.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:09:49: case.run starting 4178275.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:10:06: model execution starting 4178275.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:33:12: model execution success 4178275.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:33:12: case.run success 4178275.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:33:22: st_archive starting 4178276.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 12:33:25: st_archive success 4178276.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:07:58: build.clean starting 
+ ---------------------------------------------------
+2023-11-14 13:08:02: build.clean success 
+ ---------------------------------------------------
+2023-11-14 13:17:50: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-14 13:23:58: case.build success 
+ ---------------------------------------------------
+2023-11-14 13:39:13: case.submit starting 4181058.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:39:13: case.submit success 4181058.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:39:18: case.run starting 4181057.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:39:24: model execution starting 4181057.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:59:00: model execution success 4181057.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:59:00: case.run success 4181057.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:59:22: st_archive starting 4181058.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 13:59:25: st_archive success 4181058.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:14:31: case.submit starting 4181219.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:14:31: case.submit success 4181219.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:14:39: case.run starting 4181218.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:14:48: model execution starting 4181218.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:38:12: model execution success 4181218.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:38:12: case.run success 4181218.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:38:27: st_archive starting 4181219.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 14:38:29: st_archive success 4181219.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:20:15: case.submit starting 4186148.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:20:15: case.submit success 4186148.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:20:19: case.run starting 4186147.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:20:26: model execution starting 4186147.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:21:59: model execution error 
+ERROR: Command: 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed with error '/bin/sh: line 1: 72846 Killed                  mpirun `hostname` -np 1 omplace -tm open64 /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe >> cesm.log.$LID 2>&1' from dir '/glade/scratch/marielj/test-hillslope-mct-srof-measparam/run'
+ ---------------------------------------------------
+2023-11-15 09:21:59: case.run error 
+ERROR: RUN FAIL: Command 'mpirun `hostname`  -np 1  omplace -tm open64  /glade/scratch/marielj/test-hillslope-mct-srof-measparam/bld/cesm.exe   >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/marielj/test-hillslope-mct-srof-measparam/run/cesm.log.4186147.chadmin1.ib0.cheyenne.ucar.edu.231115-092019
+ ---------------------------------------------------
+2023-11-15 09:27:24: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-15 09:27:59: case.build success 
+ ---------------------------------------------------
+2023-11-15 09:28:30: case.submit starting 4186305.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:28:30: case.submit success 4186305.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:28:35: case.run starting 4186304.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:28:39: model execution starting 4186304.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:49:31: model execution success 4186304.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:49:31: case.run success 4186304.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:49:49: st_archive starting 4186305.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-15 09:49:50: st_archive success 4186305.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------

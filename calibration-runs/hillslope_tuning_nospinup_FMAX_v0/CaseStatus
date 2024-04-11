@@ -1,0 +1,248 @@
+2023-11-09 12:33:11: case.setup starting 4134291.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:33:19: case.setup success 4134291.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:33:20: case.setup starting 4134291.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:33:21: case.setup success 4134291.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:33:21: xmlchange success <command> ./xmlchange DATM_MODE=CLM1PT  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:21: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:22: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:22: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:22: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:23: xmlchange success <command> ./xmlchange RUN_STARTDATE=1990-01-01  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:23: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:24: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2011  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:24: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2017  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:24: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:25: xmlchange success <command> ./xmlchange STOP_N=28  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:25: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:25: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:26: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:26: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:27: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-09 12:33:27: build.clean starting 
+ ---------------------------------------------------
+2023-11-09 12:33:28: build.clean success 
+ ---------------------------------------------------
+2023-11-09 12:33:35: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-09 12:39:59: case.build success 
+ ---------------------------------------------------
+2023-11-09 12:40:25: case.submit starting 4134344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:40:25: case.submit success 4134344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:40:29: case.run starting 4134343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 12:40:36: model execution starting 4134343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 15:19:16: model execution success 4134343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 15:19:17: case.run success 4134343.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 15:19:35: st_archive starting 4134344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-09 15:19:37: st_archive success 4134344.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:11: case.setup starting 4146513.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:16: case.setup success 4146513.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-10 18:10:17: xmlchange success <command> ./xmlchange DATM_MODE=CLM1PT  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:17: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:17: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:18: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:18: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:18: xmlchange success <command> ./xmlchange RUN_STARTDATE=1990-01-01  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:19: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:19: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2011  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:20: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2017  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:20: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:21: xmlchange success <command> ./xmlchange STOP_N=28  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:21: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:22: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:22: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:22: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:23: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-10 18:10:24: build.clean starting 
+ ---------------------------------------------------
+2023-11-10 18:10:30: build.clean success 
+ ---------------------------------------------------
+2023-11-10 18:10:38: case.build starting 
+ ---------------------------------------------------
+2023-11-14 08:53:10: case.setup starting 4171362.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 08:53:11: case.setup success 4171362.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 08:53:12: xmlchange success <command> ./xmlchange DATM_MODE=CLM1PT  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:12: xmlchange success <command> ./xmlchange CLM_FORCE_COLDSTART=off  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:13: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:13: xmlchange success <command> ./xmlchange CLM_USRDAT_NAME=1x1pt_US-MBP  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:13: xmlchange success <command> ./xmlchange CALENDAR=NO_LEAP  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:14: xmlchange success <command> ./xmlchange RUN_STARTDATE=1990-01-01  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_ALIGN=2011  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:14: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_START=2011  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:15: xmlchange success <command> ./xmlchange DATM_CLMNCEP_YR_END=2017  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:15: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:16: xmlchange success <command> ./xmlchange STOP_N=28  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:16: xmlchange success <command> ./xmlchange DIN_LOC_ROOT_CLMFORC=/glade/work/marielj/inputdata/atm/datm7/CLM1PT_data  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:16: xmlchange success <command> ./xmlchange ATM_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:17: xmlchange success <command> ./xmlchange LND_DOMAIN_PATH=/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/arcticgrass-organic  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:17: xmlchange success <command> ./xmlchange ATM_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:17: xmlchange success <command> ./xmlchange LND_DOMAIN_FILE=domain.lnd.1x1pt_US-MBP_navy.230220.nc  </command>
+ ---------------------------------------------------
+2023-11-14 08:53:44: build.clean starting 
+ ---------------------------------------------------
+2023-11-14 08:53:46: build.clean success 
+ ---------------------------------------------------
+2023-11-14 08:54:59: case.build starting 
+ ---------------------------------------------------
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : .gitmodules
+Processing submodules description file : .gitmodules
+Processing externals description file : Externals_CDEPS.cfg
+Checking status of externals: clm, fates, cism, source_cism, rtm, mosart, mizuroute, ccs_config, cime, cmeps, cdeps, fox, genf90, cpl7, share, mct, parallelio, doc-builder, 
+    ./ccs_config
+        clean sandbox, on ccs_config_cesm0.0.38
+    ./cime
+        clean sandbox, on cime6.0.45
+    ./components/cdeps
+        clean sandbox, on cdeps0.12.63
+    ./components/cdeps/fox
+        clean sandbox, on 4.1.2.1
+    ./components/cdeps/share/genf90
+        clean sandbox, on genf90_200608
+    ./components/cism
+        clean sandbox, on cismwrap_2_1_95
+    ./components/cism/source_cism
+        clean sandbox, on cism_main_2.01.011
+    ./components/cmeps
+        clean sandbox, on cmeps0.13.71
+    ./components/cpl7
+        clean sandbox, on cpl7.0.14
+    ./components/mizuRoute
+        clean sandbox, on 34723c2e4df7caa16812770f8d53ebc83fa22360
+    ./components/mosart
+        clean sandbox, on mosart1_0_45
+    ./components/rtm
+        clean sandbox, on rtm1_0_78
+e-o ./doc/doc-builder
+        -, not checked out --> v1.0.8
+    ./libraries/mct
+        clean sandbox, on MCT_2.11.0
+    ./libraries/parallelio
+        clean sandbox, on pio2_5_7
+    ./share
+        clean sandbox, on share1.0.12
+    ./src/fates
+        clean sandbox, on sci.1.58.1_api.24.1.0
+2023-11-14 09:01:22: case.build success 
+ ---------------------------------------------------
+2023-11-14 09:01:48: case.submit starting 4171448.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:01:48: case.submit success 4171448.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:01:53: case.run starting 4171447.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:01:59: model execution starting 4171447.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:19:59: model execution success 4171447.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:19:59: case.run success 4171447.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:20:19: st_archive starting 4171448.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2023-11-14 09:20:20: st_archive success 4171448.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
