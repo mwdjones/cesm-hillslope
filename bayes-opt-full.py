@@ -24,7 +24,7 @@ from sklearn.gaussian_process import GaussianProcessRegressor
 from clmmodtools import *
 
 #setup case
-CASE_NAME = 'hillslope-bayes-opt'
+CASE_NAME = 'hillslope-bayes-opt-pfts'
 CASE_DIR = '/glade/u/home/marielj/cesm-hillslope/' + CASE_NAME
 
 '''LOAD CALIB DATA'''
@@ -211,7 +211,7 @@ from bayes_opt.event import Events
 clm_optimizer = BayesianOptimization(f = blackbox_clm, 
                                     pbounds = {'baseflow': (0,10),
                                                'fmax': (0, 0.4)}, 
-                                    random_state = 57289, 
+                                    random_state = 4123, 
                                     verbose = 0
                                     )
 #Load existing logs
@@ -219,17 +219,17 @@ clm_optimizer = BayesianOptimization(f = blackbox_clm,
 #print("New optimizer is now aware of {} points.".format(len(clm_optimizer.space)))
 
 #logger object records optimization search
-logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_exploitation_stream.json", reset = False)
+logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_pft_stream.json", reset = False)
 clm_optimizer.subscribe(Events.OPTIMIZATION_STEP, logger)
 
 
 #Aquisition function
-acquisition_function = UtilityFunction(kind = "ucb", kappa = 1)
+acquisition_function = UtilityFunction(kind = "ucb", kappa = 0.1)
 
 
 
 '''RUN OPTIMIZATION'''
-clm_optimizer.maximize(init_points = 20, n_iter = 60,
+clm_optimizer.maximize(init_points = 10, n_iter = 60,
                        aquisition_function = acquisition_function,
                        allow_duplicate_points = True)
 

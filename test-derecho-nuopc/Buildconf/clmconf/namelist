@@ -4,9 +4,13 @@
 
  fsurdat = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth.nc'
 
- !Hillslope-specific spinup
+ !Hillslope spinup no pfts
 
- ! finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-baseparams.clm2.r.0301-01-01-00000.nc'
+ !finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-baseparams.clm2.r.0301-01-01-00000.nc'
+
+ !Hillslope spinup with pfts
+
+ finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-pftparams.clm2.r.0301-01-01-00000.nc'
 
  !Grass CLM spinup
 
@@ -16,7 +20,7 @@
 
  use_hillslope_routing = .true.
 
- !use_init_interp = .true.
+ use_init_interp = .true.
 
  hist_nhtfrq = 0,0,-24,-24
 
@@ -32,6 +36,6 @@
 
  hillslope_pft_distribution_method = 'FromFile'
 
-  
+ hillslope_soil_profile_method = 'FromFile' 
 
 / 

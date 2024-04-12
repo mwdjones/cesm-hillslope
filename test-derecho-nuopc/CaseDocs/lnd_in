@@ -8,7 +8,7 @@
  crop_fsat_equals_zero = .false.
  do_sno_oc = .false.
  downscale_hillslope_meteorology = .true.
- finidat = '/glade/campaign/cesm/cesmdata/inputdata/lnd/clm2/initdata_map/clmi.I2000Clm50BgcCrop.2011-01-01.1.9x2.5_gx1v7_gl4_simyr2000_c190312.nc'
+ finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-pftparams.clm2.r.0301-01-01-00000.nc'
  for_testing_no_crop_seed_replenishment = .false.
  for_testing_run_ncdiopio_tests = .false.
  for_testing_use_repr_structure_pool = .false.
@@ -209,7 +209,7 @@
 /
 &hillslope_properties_inparm
  hillslope_pft_distribution_method = 'FromFile'
- hillslope_soil_profile_method = 'Uniform'
+ hillslope_soil_profile_method = 'FromFile'
 /
 &cnprecision_inparm
 /

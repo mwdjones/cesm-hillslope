@@ -19,8 +19,10 @@
 !----------------------------------------------------------------------------------
 
  fsurdat = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth.nc'
- !Hillslope-specific spinup
- finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-baseparams.clm2.r.0301-01-01-00000.nc'
+ !Hillslope spinup no pfts
+ !finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-baseparams.clm2.r.0301-01-01-00000.nc'
+ !Hillslope spinup with pfts
+ finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-pftparams.clm2.r.0301-01-01-00000.nc'
  !Grass CLM spinup
  !finidat = '/glade/u/home/marielj/clm_frost/cesm_cases/spinup/finaldata/1ptBGC_spinup_grass.clm2.r.0201-01-01-00000.nc'
  use_hillslope = .true.
