@@ -1,0 +1,220 @@
+Region                                                                 PETs   PEs    Count    Mean (s)    Min (s)     Min PET Max (s)     Max PET
+  [ESMF]                                                               1      1      1        413.3492    413.3492    0       413.3492    0      
+    [ensemble] RunPhase1                                               1      1      1        407.1431    407.1430    0       407.1430    0      
+      [ESM0001] RunPhase1                                              1      1      1        407.1429    407.1429    0       407.1429    0      
+        [LND] RunPhase1                                                1      1      122640   126.6341    126.6341    0       126.6341    0      
+          ctsm_run                                                     1      1      122641   96.1558     96.1558     0       96.1558     0      
+            hydro_without_drainage                                     1      1      122641   28.7456     28.7456     0       28.7456     0      
+            hbuf                                                       1      1      122641   24.5526     24.5526     0       24.5526     0      
+            bgp_fluxes                                                 1      1      122641   14.3156     14.3156     0       14.3156     0      
+              canflux                                                  1      1      122641   13.4683     13.4683     0       13.4683     0      
+                can_iter                                               1      1      122641   11.8123     11.8123     0       11.8123     0      
+                LUNA                                                   1      1      2556     0.0077      0.0077      0       0.0077      0      
+              bgflux                                                   1      1      122641   0.3033      0.3033      0       0.3033      0      
+              uflux                                                    1      1      122641   0.2886      0.2886      0       0.2886      0      
+              bgplake                                                  1      1      122641   0.0859      0.0859      0       0.0859      0      
+            soiltemperature                                            1      1      122641   4.5271      4.5271      0       4.5271      0      
+              SoilTempBandDiag                                         1      1      122641   1.6058      1.6058      0       1.6058      0      
+              SoilThermProp                                            1      1      122641   0.9302      0.9302      0       0.9302      0      
+              PhaseChangebeta                                          1      1      122641   0.3855      0.3855      0       0.3855      0      
+              PhaseChangeH2osfc                                        1      1      122641   0.0491      0.0491      0       0.0491      0      
+            clm_drv_io                                                 1      1      122641   2.4137      2.4137      0       2.4137      0      
+              clm_drv_io_htapes                                        1      1      122641   2.2822      2.2822      0       2.2822      0      
+                hist_htapes_wrapup_write                               1      1      5280     0.7537      0.7537      0       0.7537      0      
+                hist_htapes_wrapup_define                              1      1      184      0.6793      0.6793      0       0.6793      0      
+                hist_htapes_wrapup_tconst                              1      1      5280     0.3624      0.3624      0       0.3624      0      
+              clm_drv_io_wrest                                         1      1      1        0.0730      0.0730      0       0.0730      0      
+            dyn_subgrid                                                1      1      122641   2.2524      2.2524      0       2.2524      0      
+            hdmdyn_strd_adv_total                                      1      1      122641   2.0239      2.0239      0       2.0239      0      
+              hdmdyn_strd_adv_tint                                     1      1      122641   1.6094      1.6094      0       1.6094      0      
+              hdmdyn_strd_adv_readLBUB                                 1      1      122641   0.2023      0.2023      0       0.2023      0      
+                hdmdyn_readLBUB_setup                                  1      1      122641   0.0487      0.0487      0       0.0487      0      
+                hdmdyn_readLBUB_filemgt                                1      1      122641   0.0151      0.0151      0       0.0151      0      
+            surfalb                                                    1      1      122639   1.7989      1.7989      0       1.7989      0      
+            balchk                                                     1      1      122641   1.5113      1.5113      0       1.5113      0      
+            bgc                                                        1      1      122641   1.4467      1.4467      0       1.4467      0      
+            begwbal                                                    1      1      245282   1.3699      1.3699      0       1.3699      0      
+            accum                                                      1      1      122640   1.2471      1.2471      0       1.2471      0      
+            drvinit                                                    1      1      122641   1.0836      1.0836      0       1.0836      0      
+            interpMonthlyVeg                                           1      1      122639   0.9733      0.9733      0       0.9733      0      
+              readMonthlyVeg                                           1      1      85       0.8254      0.8254      0       0.8254      0      
+            lnd2atm                                                    1      1      122641   0.9359      0.9359      0       0.9359      0      
+            hydro1                                                     1      1      122641   0.8271      0.8271      0       0.8271      0      
+            hylake                                                     1      1      122641   0.8017      0.8017      0       0.8017      0      
+            hydro2_drainage                                            1      1      122641   0.7266      0.7266      0       0.7266      0      
+            surfrad                                                    1      1      122641   0.5429      0.5429      0       0.5429      0      
+            lakeTemp                                                   1      1      122641   0.5081      0.5081      0       0.5081      0      
+            bgp1                                                       1      1      122641   0.4612      0.4612      0       0.4612      0      
+            bgp2                                                       1      1      122641   0.3673      0.3673      0       0.3673      0      
+              bgp2_loop_3                                              1      1      122641   0.0883      0.0883      0       0.0883      0      
+              bgp2_loop_1                                              1      1      122641   0.0461      0.0461      0       0.0461      0      
+              bgp2_loop_4                                              1      1      122641   0.0435      0.0435      0       0.0435      0      
+              bgp2_loop_2                                              1      1      122641   0.0426      0.0426      0       0.0426      0      
+            snow_init                                                  1      1      122641   0.1061      0.1061      0       0.1061      0      
+            lnd2glc                                                    1      1      122641   0.0802      0.0802      0       0.0802      0      
+            decomp_vert                                                1      1      122641   0.0785      0.0785      0       0.0785      0      
+            patch2col                                                  1      1      122641   0.0673      0.0673      0       0.0673      0      
+            SatellitePhenology                                         1      1      122639   0.0630      0.0630      0       0.0630      0      
+            depvel                                                     1      1      122641   0.0246      0.0246      0       0.0246      0      
+            begcnbal_col                                               1      1      122641   0.0081      0.0081      0       0.0081      0      
+            begcnbal_grc                                               1      1      122641   0.0080      0.0080      0       0.0080      0      
+          lc_lnd_export                                                1      1      122641   4.0598      4.0598      0       4.0598      0      
+          lc_lnd_import                                                1      1      122640   3.2856      3.2856      0       3.2856      0      
+          shr_orb_decl                                                 1      1      122641   0.5366      0.5366      0       0.5366      0      
+          lc_ctsm2_adv_timestep                                        1      1      122641   0.1197      0.1197      0       0.1197      0      
+        [ATM] RunPhase1                                                1      1      122640   94.9994     94.9994     0       94.9994     0      
+          (atm_comp_nuopc):(ModelAdvance)                              1      1      122640   85.8913     85.8913     0       85.8913     0      
+            datm_run                                                   1      1      122640   84.6514     84.6514     0       84.6514     0      
+              DATM_RUN                                                 1      1      122640   84.6084     84.6084     0       84.6084     0      
+                datm_strdata_advance                                   1      1      122640   63.1902     63.1902     0       63.1902     0      
+                  datm_strd_adv_total                                  1      1      122640   63.0902     63.0902     0       63.0902     0      
+                    datm_strd_adv_readLBUB                             1      1      613200   53.8437     53.8438     0       53.8438     0      
+                      datm_readLBUB_UB_readpio                         1      1      122899   40.9122     40.9122     0       40.9122     0      
+                      datm_readLBUB_filemgt                            1      1      613200   4.3706      4.3706      0       4.3706      0      
+                      datm_readLBUB_fbound                             1      1      122899   2.5230      2.5230      0       2.5230      0      
+                      datm_readLBUB_setup                              1      1      613200   0.1740      0.1740      0       0.1740      0      
+                    datm_strd_adv_tint                                 1      1      613200   8.6561      8.6561      0       8.6561      0      
+                datm_datamode                                          1      1      122640   11.1654     11.1654     0       11.1654     0      
+                datm_dfield_copy                                       1      1      122640   10.1075     10.1075     0       10.1075     0      
+        [MED] med_phases_prep_lnd                                      1      1      122640   56.2283     56.2283     0       56.2283     0      
+          MED:(med_phases_prep_lnd)                                    1      1      122640   47.6959     47.6959     0       47.6959     0      
+            MED:(med_phases_prep_lnd) merge                            1      1      122640   6.8410      6.8410      0       6.8410      0      
+              MED: (module_med_merge_mod: med_merge_auto)              1      1      122640   6.7168      6.7168      0       6.7168      0      
+        [MED] med_phases_post_atm                                      1      1      122640   16.8484     16.8484     0       16.8484     0      
+          MED:(med_phases_post_atm)                                    1      1      122640   6.7374      6.7374      0       6.7374      0      
+            MED:(med_phases_post_atm) map_atm2lnd                      1      1      122640   4.0099      4.0099      0       4.0099      0      
+              MED: (med_map_mod:med_map_field_packed)                  1      1      122640   3.9174      3.9174      0       3.9174      0      
+                MED: (med_map_mod:med_map_field_packed) copy from src  1      1      122640   0.9295      0.9295      0       0.9295      0      
+                MED: (med_map_mod:med_map_field_packed) map            1      1      122640   0.7965      0.7965      0       0.7965      0      
+                MED: (med_map_mod:med_map_field_packed) copy to dest   1      1      122640   0.6942      0.6942      0       0.6942      0      
+            MED:(med_phases_history_write_inst_comp)                   1      1      122640   1.3501      1.3501      0       1.3501      0      
+            MED:(med_phases_history_write_comp_avg)                    1      1      122640   0.8518      0.8518      0       0.8518      0      
+            MED:(med_phases_history_write_comp_aux)                    1      1      122640   0.0324      0.0324      0       0.0324      0      
+        [ATM-TO-MED] RunPhase1                                         1      1      122640   12.9260     12.9260     0       12.9260     0      
+        [MED] med_phases_post_lnd                                      1      1      122640   12.1919     12.1919     0       12.1919     0      
+          MED:(med_phases_post_lnd)                                    1      1      122640   2.4451      2.4451      0       2.4451      0      
+            MED:(med_phases_history_write_inst_comp)                   1      1      122640   1.1471      1.1471      0       1.1471      0      
+            MED:(med_phases_history_write_comp_avg)                    1      1      122640   0.8551      0.8551      0       0.8551      0      
+            MED:(med_phases_history_write_comp_aux)                    1      1      122640   0.0334      0.0334      0       0.0334      0      
+        [LND-TO-MED] RunPhase1                                         1      1      122640   12.0815     12.0815     0       12.0815     0      
+        [MED-TO-LND] RunPhase1                                         1      1      122640   11.3779     11.3779     0       11.3779     0      
+        [MED] med_phases_restart_write                                 1      1      122640   10.9748     10.9748     0       10.9748     0      
+          MED:(med_phases_restart_write)                               1      1      122640   3.0468      3.0468      0       3.0468      0      
+        [MED] med_phases_profile                                       1      1      122640   9.1776      9.1776      0       9.1776      0      
+          MED:(med_phases_profile)                                     1      1      122640   1.3185      1.3185      0       1.3185      0      
+        [MED] med_phases_history_write                                 1      1      122640   8.5116      8.5116      0       8.5116      0      
+          MED:(med_phases_history_write)                               1      1      122640   0.0777      0.0777      0       0.0777      0      
+    [ensemble] Init 1                                                  1      1      1        6.1647      6.1647      0       6.1647      0      
+      [ESM0001] IPDv02p3                                               1      1      1        5.7807      5.7807      0       5.7807      0      
+        [ATM] IPDv01p3                                                 1      1      1        4.6671      4.6671      0       4.6671      0      
+          datm_strdata_init                                            1      1      1        2.4663      2.4663      0       2.4663      0      
+          DATM_RUN                                                     1      1      1        2.1922      2.1922      0       2.1922      0      
+            datm_strdata_advance                                       1      1      1        2.1910      2.1910      0       2.1910      0      
+              datm_strd_adv_total                                      1      1      1        2.1910      2.1910      0       2.1910      0      
+                datm_strd_adv_readLBUB                                 1      1      5        2.1909      2.1909      0       2.1909      0      
+                  datm_readLBUB_fbound                                 1      1      5        2.1073      2.1073      0       2.1073      0      
+                  datm_readLBUB_LB_readpio                             1      1      5        0.0113      0.0113      0       0.0113      0      
+                  datm_readLBUB_UB_readpio                             1      1      5        0.0080      0.0080      0       0.0080      0      
+                  datm_readLBUB_filemgt                                1      1      5        0.0007      0.0007      0       0.0007      0      
+                  datm_readLBUB_setup                                  1      1      5        0.0000      0.0000      0       0.0000      0      
+                datm_strd_adv_tint                                     1      1      5        0.0001      0.0001      0       0.0001      0      
+            datm_datamode                                              1      1      1        0.0001      0.0001      0       0.0001      0      
+            datm_dfield_copy                                           1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND] IPDv01p3                                                 1      1      1        0.8968      0.8968      0       0.8968      0      
+          clm_init2                                                    1      1      1        0.8234      0.8234      0       0.8234      0      
+            hdmdyn_strd_adv_total                                      1      1      1        0.2316      0.2316      0       0.2316      0      
+              hdmdyn_strd_adv_readLBUB                                 1      1      1        0.2316      0.2316      0       0.2316      0      
+                hdmdyn_readLBUB_fbound                                 1      1      1        0.2227      0.2227      0       0.2227      0      
+                hdmdyn_readLBUB_LB_readpio                             1      1      1        0.0015      0.0015      0       0.0015      0      
+                hdmdyn_readLBUB_UB_readpio                             1      1      1        0.0003      0.0003      0       0.0003      0      
+                hdmdyn_readLBUB_filemgt                                1      1      1        0.0000      0.0000      0       0.0000      0      
+                hdmdyn_readLBUB_setup                                  1      1      1        0.0000      0.0000      0       0.0000      0      
+              hdmdyn_strd_adv_tint                                     1      1      1        0.0000      0.0000      0       0.0000      0      
+            init_cropcal                                               1      1      1        0.0013      0.0013      0       0.0013      0      
+            init_accflds                                               1      1      1        0.0002      0.0002      0       0.0002      0      
+            init_dyn_subgrid                                           1      1      1        0.0001      0.0001      0       0.0001      0      
+            init_wlog                                                  1      1      1        0.0000      0.0000      0       0.0000      0      
+            init_orbd                                                  1      1      1        0.0000      0.0000      0       0.0000      0      
+            init_map2gc                                                1      1      1        0.0000      0.0000      0       0.0000      0      
+            init_lnd2glc                                               1      1      1        0.0000      0.0000      0       0.0000      0      
+          clm_init1                                                    1      1      1        0.0503      0.0503      0       0.0503      0      
+        [LND-TO-MED] IPDv05p5                                          1      1      1        0.0305      0.0305      0       0.0305      0      
+        [LND-TO-MED] IPDv05p4                                          1      1      1        0.0274      0.0274      0       0.0274      0      
+        [ATM-TO-MED] IPDv05p5                                          1      1      1        0.0256      0.0256      0       0.0256      0      
+        [ATM-TO-MED] IPDv05p4                                          1      1      1        0.0190      0.0190      0       0.0190      0      
+        [ATM-TO-MED] IPDv05p6a                                         1      1      1        0.0162      0.0162      0       0.0162      0      
+        [MED-TO-LND] IPDv05p5                                          1      1      1        0.0154      0.0154      0       0.0154      0      
+        [LND-TO-MED] IPDv05p6b                                         1      1      1        0.0154      0.0154      0       0.0154      0      
+        [LND-TO-MED] IPDv05p6a                                         1      1      1        0.0152      0.0152      0       0.0152      0      
+        [MED-TO-LND] IPDv05p4                                          1      1      1        0.0129      0.0129      0       0.0129      0      
+        [MED-TO-LND] IPDv05p6a                                         1      1      1        0.0101      0.0101      0       0.0101      0      
+        [ATM-TO-MED] IPDv05p6b                                         1      1      1        0.0096      0.0096      0       0.0096      0      
+        [MED] IPDv03p5                                                 1      1      1        0.0076      0.0076      0       0.0076      0      
+        [MED-TO-LND] IPDv05p6b                                         1      1      1        0.0060      0.0060      0       0.0060      0      
+        [MED] IPDv03p3                                                 1      1      1        0.0023      0.0023      0       0.0023      0      
+        [MED] IPDv03p4                                                 1      1      1        0.0005      0.0005      0       0.0005      0      
+        [MED] IPDv03p6                                                 1      1      1        0.0002      0.0002      0       0.0002      0      
+        [ATM] IPDv01p4                                                 1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND] IPDv01p4                                                 1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ESM0001] IPDv05p4                                             1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ESM0001] IPDv05p6                                             1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ESM0001] IPDv02p1                                               1      1      1        0.3544      0.3544      0       0.3544      0      
+        [MED] IPDv03p1                                                 1      1      1        0.0601      0.0601      0       0.0601      0      
+        [MED-TO-LND] IPDv05p3                                          1      1      1        0.0496      0.0496      0       0.0496      0      
+        [LND-TO-MED] IPDv05p3                                          1      1      1        0.0434      0.0434      0       0.0434      0      
+        [ATM-TO-MED] IPDv05p3                                          1      1      1        0.0230      0.0230      0       0.0230      0      
+        [MED-TO-LND] IPDv05p2a                                         1      1      1        0.0158      0.0158      0       0.0158      0      
+        [MED-TO-LND] IPDv05p2b                                         1      1      1        0.0157      0.0157      0       0.0157      0      
+        [LND] IPDv01p1                                                 1      1      1        0.0151      0.0151      0       0.0151      0      
+        [MED-TO-LND] IPDv05p1                                          1      1      1        0.0141      0.0141      0       0.0141      0      
+        [ATM-TO-MED] IPDv05p2b                                         1      1      1        0.0131      0.0131      0       0.0131      0      
+        [ATM-TO-MED] IPDv05p2a                                         1      1      1        0.0131      0.0131      0       0.0131      0      
+        [LND-TO-MED] IPDv05p2b                                         1      1      1        0.0123      0.0123      0       0.0123      0      
+        [LND-TO-MED] IPDv05p2a                                         1      1      1        0.0122      0.0122      0       0.0122      0      
+        [ATM-TO-MED] IPDv05p1                                          1      1      1        0.0111      0.0111      0       0.0111      0      
+        [LND-TO-MED] IPDv05p1                                          1      1      1        0.0107      0.0107      0       0.0107      0      
+        [ATM] IPDv01p1                                                 1      1      1        0.0075      0.0075      0       0.0075      0      
+        [MED] Init 0                                                   1      1      1        0.0018      0.0018      0       0.0018      0      
+        [ESM0001] IPDv05p3                                             1      1      1        0.0003      0.0003      0       0.0003      0      
+        [ESM0001] IPDv03p2                                             1      1      1        0.0002      0.0002      0       0.0002      0      
+        [MED-TO-LND] Init 0                                            1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND-TO-MED] Init 0                                            1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ATM-TO-MED] Init 0                                            1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ATM] Init 0                                                   1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND] Init 0                                                   1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ESM0001] IPDv05p2                                             1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ESM0001] IPDv05p1                                             1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ESM0001] IPDv02p5                                               1      1      1        0.0168      0.0168      0       0.0168      0      
+        [MED] IPDv03p7                                                 1      1      2        0.0147      0.0147      0       0.0147      0      
+          MED: (med_fraction_init)                                     1      1      1        0.0005      0.0005      0       0.0005      0      
+          MED: (med_map_mod: RouteHandles_init)                        1      1      1        0.0003      0.0003      0       0.0003      0      
+          MED:(med_phases_profile)                                     1      1      1        0.0001      0.0001      0       0.0001      0      
+          MED:(med_phases_post_atm)                                    1      1      1        0.0001      0.0001      0       0.0001      0      
+            MED:(med_phases_post_atm) map_atm2lnd                      1      1      1        0.0001      0.0001      0       0.0001      0      
+              MED: (med_map_mod:med_map_field_packed)                  1      1      1        0.0001      0.0001      0       0.0001      0      
+                MED: (med_map_mod:med_map_field_packed) map            1      1      1        0.0000      0.0000      0       0.0000      0      
+                MED: (med_map_mod:med_map_field_packed) copy from src  1      1      1        0.0000      0.0000      0       0.0000      0      
+                MED: (med_map_mod:med_map_field_packed) copy to dest   1      1      1        0.0000      0.0000      0       0.0000      0      
+          MED:(med_phases_post_lnd)                                    1      1      1        0.0000      0.0000      0       0.0000      0      
+          MED: (med_fraction_set)                                      1      1      1        0.0000      0.0000      0       0.0000      0      
+        [ATM-TO-MED] RunPhase1                                         1      1      1        0.0002      0.0002      0       0.0002      0      
+        [ATM] IPDv01p5                                                 1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND-TO-MED] RunPhase1                                         1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND] IPDv01p5                                                 1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ESM0001] IPDv05p8                                             1      1      1        0.0000      0.0000      0       0.0000      0      
+      (ensemble_driver.F90:SetModelServices)                           1      1      1        0.0080      0.0080      0       0.0080      0      
+      [ESM0001] Init 0                                                 1      1      1        0.0001      0.0001      0       0.0001      0      
+      [ensemble] IPDv05p1                                              1      1      1        0.0001      0.0001      0       0.0001      0      
+      [ensemble] IPDv05p4                                              1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ensemble] IPDv05p3                                              1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ensemble] IPDv05p2                                              1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ensemble] IPDv05p8                                              1      1      1        0.0000      0.0000      0       0.0000      0      
+      [ensemble] IPDv05p6                                              1      1      1        0.0000      0.0000      0       0.0000      0      
+    [ensemble] FinalizePhase1                                          1      1      1        0.0017      0.0017      0       0.0017      0      
+      [ESM0001] FinalizePhase1                                         1      1      1        0.0016      0.0016      0       0.0016      0      
+        [MED-TO-LND] FinalizePhase1                                    1      1      1        0.0002      0.0002      0       0.0002      0      
+        [LND] FinalizePhase1                                           1      1      1        0.0001      0.0001      0       0.0001      0      
+        [MED] FinalizePhase1                                           1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ATM-TO-MED] FinalizePhase1                                    1      1      1        0.0001      0.0001      0       0.0001      0      
+        [LND-TO-MED] FinalizePhase1                                    1      1      1        0.0001      0.0001      0       0.0001      0      
+        [ATM] FinalizePhase1                                           1      1      1        0.0001      0.0001      0       0.0001      0      
