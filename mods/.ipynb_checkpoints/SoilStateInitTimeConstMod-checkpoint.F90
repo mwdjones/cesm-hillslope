@@ -504,19 +504,22 @@ contains
                    ! clay + 10 10 0
                    ! sand - 10 10 0
                    if((c-begc+1) == 1) then 
-                      om_frac = 0.75 * om_frac
-                      clay = clay + 10
-                      sand = sand - 10
-                   endif
-                   if((c-begc+1) == 2) then 
+                      !Lagg
                       om_frac = 1 * om_frac
-                      clay = clay + 10
-                      sand = sand - 10
-                   endif
-                   if((c-begc+1) == 3) then 
-                      om_frac = 0.25 * om_frac
                       clay = clay + 0
                       sand = sand - 0
+                   endif
+                   if((c-begc+1) == 2) then 
+                      !Bog
+                      om_frac = 1 * om_frac
+                      clay = clay + 0
+                      sand = sand - 0
+                   endif
+                   if((c-begc+1) == 3) then 
+                      !Upland
+                      om_frac = 0 * om_frac
+                      clay = clay + 24
+                      sand = sand + 56
                    endif
 
                 else

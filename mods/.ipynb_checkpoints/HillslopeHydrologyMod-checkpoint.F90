@@ -545,6 +545,11 @@ contains
       call endrun( 'ERROR:: unrecognized hillslope_pft_distribution_method'//errmsg(sourcefile, __LINE__) )
     end if
 
+    !scs
+    ! Overwrite pft distributions
+    call HillslopeNPftPerColumn(bounds)
+    !scs
+
     if ( allocated(hill_pftndx) ) then
        deallocate(hill_pftndx)
        deallocate(col_pftndx)
@@ -556,6 +561,121 @@ contains
     call ncd_pio_closefile(ncid)
 
   end subroutine InitHillslope
+
+  !scs
+  !------------------------------------------------------------------------
+  subroutine HillslopeNPftPerColumn(bounds)
+    !
+    ! !DESCRIPTION:
+    ! Reassign patch weights of each column
+
+    ! Currently, this assumes 3 columns with 2 patches/pfts per column
+    ! note: set n_dom_pfts = 2 in user_nl_clm when using this subroutine
+    !
+    ! !USES
+    use LandunitType    , only : lun
+    use ColumnType      , only : col
+    use decompMod       , only : get_clump_bounds, get_proc_clumps
+    use clm_varcon      , only : ispval
+    use PatchType       , only : patch
+    use pftconMod       , only : pftcon, ndllf_evr_tmp_tree, nc3_nonarctic_grass, nc4_grass
+    use array_utils     , only : find_k_max_indices
+    !
+    !
+    ! !ARGUMENTS:
+    type(bounds_type), intent(in) :: bounds
+    !
+    ! !LOCAL VARIABLES:
+    integer :: p,c    ! indices
+    integer :: p1, p2, p3
+    ! desired pft types
+    integer, parameter :: p1_col1=12 !lagg - arctic grass
+    integer, parameter :: p2_col1=10 !lagg - shrub
+    integer, parameter :: p3_col1=1  !lagg - conif tree
+    integer, parameter :: p1_col2=12 !bog - arctic grass
+    integer, parameter :: p2_col2=1  !bog - conif tree
+    integer, parameter :: p1_col3=12 !upland - arctic grass
+    integer, parameter :: p2_col3=7  !upland - deciduous tree
+    integer, parameter :: p3_col3=1  !upland - conif tree
+    real(r8) :: sum_wtcol, sum_wtlun, sum_wtgrc
+    real(r8) :: frac1, frac2, frac3
+
+    !------------------------------------------------------------------------
+
+    do c = bounds%begc,bounds%endc
+       if (col%is_hillslope_column(c)) then
+
+
+          sum_wtcol = sum(patch%wtcol(col%patchi(c):col%patchf(c)))
+          sum_wtlun = sum(patch%wtlunit(col%patchi(c):col%patchf(c)))
+          sum_wtgrc = sum(patch%wtgcell(col%patchi(c):col%patchf(c)))
+
+          patch%wtcol(col%patchi(c):col%patchf(c)) = 0._r8
+          patch%wtlunit(col%patchi(c):col%patchf(c)) = 0._r8
+          patch%wtgcell(col%patchi(c):col%patchf(c)) = 0._r8
+
+          ! column 1 - lagg
+          if((c-bounds%begc+1) == 1) then
+             p1 = ispval
+             p2 = ispval
+             p3 = ispval
+             ! locate patch index of desired pft
+             do p = col%patchi(c), col%patchf(c)
+                if(patch%itype(p) == p1_col1) p1 = p
+                if(patch%itype(p) == p2_col1) p2 = p
+                if(patch%itype(p) == p3_col1) p3 = p
+             enddo
+             frac1 = 0.35_r8
+             frac2 = 0.60_r8
+             frac3 = (1.0_r8 - frac1 - frac2)
+          endif
+          ! column 2 - bog
+          if((c-bounds%begc+1) == 2) then 
+             p1 = ispval
+             p2 = ispval
+             ! locate patch index of desired pft
+             do p = col%patchi(c), col%patchf(c)
+                if(patch%itype(p) == p1_col2) p1 = p
+                if(patch%itype(p) == p2_col2) p2 = p
+             enddo
+             frac1 = 0.5_r8
+             frac2 = (1.0_r8 - frac1)
+          endif
+          ! column 3 - upland
+          if((c-bounds%begc+1) == 3) then 
+             p1 = ispval
+             p2 = ispval
+             p3 = ispval
+             ! locate patch index of desired pft
+             do p = col%patchi(c), col%patchf(c)
+                if(patch%itype(p) == p1_col3) p1 = p
+                if(patch%itype(p) == p2_col3) p2 = p
+                if(patch%itype(p) == p3_col3) p3 = p
+             enddo
+             frac1 = 0.10_r8
+             frac2 = 0.60_r8
+             frac3 = (1.0_r8 - frac1 - frac2)
+          endif
+          
+          ! reweight 1st patch
+          patch%wtcol(p1)   = sum_wtcol * frac1
+          patch%wtlunit(p1) = sum_wtlun * frac1
+          patch%wtgcell(p1) = sum_wtgrc * frac1
+          ! reweight 2nd patch
+          patch%wtcol(p2) = sum_wtcol * frac2
+          patch%wtlunit(p2) = sum_wtlun * frac2
+          patch%wtgcell(p2) = sum_wtgrc * frac2
+          ! reweight 3rd patch
+          patch%wtcol(p3) = sum_wtcol * frac3
+          patch%wtlunit(p3) = sum_wtlun * frac3
+          patch%wtgcell(p3) = sum_wtgrc * frac3
+
+       end if
+    enddo    ! end loop c
+
+  end subroutine HillslopeNPftPerColumn
+  !scs
+  
 
   !-----------------------------------------------------------------------
 

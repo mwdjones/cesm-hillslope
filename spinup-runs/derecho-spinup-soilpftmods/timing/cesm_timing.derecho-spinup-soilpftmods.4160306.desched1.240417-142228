@@ -1,0 +1,88 @@
+---------------- TIMING PROFILE ---------------------
+  Case        : derecho-spinup-soilpftmods
+  LID         : 4160306.desched1.240417-142228
+  Machine     : derecho
+  Caseroot    : /glade/u/home/marielj/cesm-hillslope/spinup-runs/derecho-spinup-soilpftmods
+  Timeroot    : /glade/u/home/marielj/cesm-hillslope/spinup-runs/derecho-spinup-soilpftmods/Tools
+  User        : marielj
+  Curr Date   : Wed Apr 17 19:40:48 2024
+  Driver      : CMEPS
+  grid        : a%CLM_USRDAT_l%CLM_USRDAT_oi%null_r%null_g%null_w%null_z%null_m%null
+  compset     : 2000_DATM%1PT_CLM50%SP_SICE_SOCN_SROF_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : nyears, stop_n = 300
+  run length  : 109500 days (109499.97916666667 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride) 
+  ---------        ------     -------   ------   ------  ---------  ------  
+  cpl = cpl        1           0        1      x 1       1      (1     ) 
+  atm = datm       1           0        1      x 1       1      (1     ) 
+  lnd = clm        1           0        1      x 1       1      (1     ) 
+  ice = sice       1           0        1      x 1       1      (1     ) 
+  ocn = socn       1           0        1      x 1       1      (1     ) 
+  rof = srof       1           0        1      x 1       1      (1     ) 
+  glc = sglc       1           0        1      x 1       1      (1     ) 
+  wav = swav       1           0        1      x 1       1      (1     ) 
+  esp = sesp       1           0        1      x 1       1      (1     ) 
+
+  total pes active           : 1 
+  mpi tasks per node         : 128 
+  pe count for cost estimate : 128 
+
+  Overall Metrics: 
+    Model Cost:               2.26   pe-hrs/simulated_year 
+    Model Throughput:      1360.54   simulated_years/day 
+
+    Init Time   :      23.235 seconds 
+    Run Time    :   19051.322 seconds        0.174 seconds/day 
+    Final Time  :       0.018 seconds 
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day 
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components 
+
+    TOT Run Time:   19051.322 seconds        0.174 seconds/mday      1360.54 myears/wday 
+    CPL Run Time:    5058.090 seconds        0.046 seconds/mday      5124.46 myears/wday 
+    ATM Run Time:    4100.380 seconds        0.037 seconds/mday      6321.37 myears/wday 
+    LND Run Time:    6729.131 seconds        0.061 seconds/mday      3851.91 myears/wday 
+    ICE Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    OCN Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    ROF Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    CPL COMM Time:   1610.292 seconds        0.015 seconds/mday     16096.46 myears/wday 
+   NOTE: min:max driver timers (seconds/day):   
+                            CPL (pes 0 to 0) 
+                                                ATM (pes 0 to 0) 
+                                                LND (pes 0 to 0) 
+                                                ICE (pes 0 to 0) 
+                                                OCN (pes 0 to 0) 
+                                                ROF (pes 0 to 0) 
+                                                GLC (pes 0 to 0) 
+                                                WAV (pes 0 to 0) 
+                                                ESP (pes 0 to 0) 
+
+
+
+More info on coupler timing:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

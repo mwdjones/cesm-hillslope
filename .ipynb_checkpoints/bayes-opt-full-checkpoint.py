@@ -24,7 +24,7 @@ from sklearn.gaussian_process import GaussianProcessRegressor
 from clmmodtools import *
 
 #setup case
-CASE_NAME = 'hillslope-bayes-opt-pfts'
+CASE_NAME = 'hillslope-bayes-opt-soilpftmods'
 CASE_DIR = '/glade/u/home/marielj/cesm-hillslope/' + CASE_NAME
 
 '''LOAD CALIB DATA'''
@@ -162,7 +162,7 @@ def blackbox_NDclm(baseflow, fmax, sand, clay):
 
 def blackbox_clm_wte(baseflow, fmax):
     #change parameter in netcdf file
-    target_surface_file = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth.nc'
+    target_surface_file = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_pftdistribution.nc'
     target_param1 = 'baseflow_scalar'
     target_param2 = 'FMAX' 
     
@@ -211,15 +211,15 @@ from bayes_opt.event import Events
 clm_optimizer = BayesianOptimization(f = blackbox_clm_wte, 
                                     pbounds = {'baseflow': (0,10),
                                                'fmax': (0, 0.4)}, 
-                                    random_state = 45332, 
+                                    random_state = 45892, 
                                     verbose = 0
                                     )
 #Load existing logs
-load_logs(clm_optimizer, logs=["/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_pft_wte.json"])
-print("New optimizer is now aware of {} points.".format(len(clm_optimizer.space)))
+#load_logs(clm_optimizer, logs=["/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_pft_wte.json"])
+#print("New optimizer is now aware of {} points.".format(len(clm_optimizer.space)))
 
 #logger object records optimization search
-logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_pft_wte.json", reset = False)
+logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_soilpftmods_wte.json", reset = False)
 clm_optimizer.subscribe(Events.OPTIMIZATION_STEP, logger)
 
 
@@ -229,7 +229,7 @@ acquisition_function = UtilityFunction(kind = "ucb", kappa = 0.1)
 
 
 '''RUN OPTIMIZATION'''
-clm_optimizer.maximize(init_points = 0, n_iter = 83,
+clm_optimizer.maximize(init_points = 10, n_iter = 50,
                        aquisition_function = acquisition_function,
                        allow_duplicate_points = True)
 
