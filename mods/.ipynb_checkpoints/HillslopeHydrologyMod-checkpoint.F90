@@ -724,7 +724,7 @@ contains
        call ncd_pio_openfile (ncid, locfn, 0)
 
        allocate(fhillslope_in(bounds%begg:bounds%endg,max_columns_hillslope))
-       call ncd_io(ncid=ncid, varname='hillslope_bedrock_depth', flag='read', data=fhillslope_in, dim1name=grlnd, readvar=readvar)
+       call ncd_io(ncid=ncid, varname='h_bedrock', flag='read', data=fhillslope_in, dim1name=grlnd, readvar=readvar)
        if (masterproc .and. .not. readvar) then
           call endrun( 'ERROR:: soil_profile_method = "FromFile", but hillslope_bedrock not found on surface data set.'//errmsg(sourcefile, __LINE__) )
        end if

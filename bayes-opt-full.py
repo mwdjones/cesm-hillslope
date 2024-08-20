@@ -24,7 +24,7 @@ from sklearn.gaussian_process import GaussianProcessRegressor
 from clmmodtools import *
 
 #setup case
-CASE_NAME = 'hillslope-bayes-opt-soilpftmods'
+CASE_NAME = 'hillslope-bayes-opt-seanmods'
 CASE_DIR = '/glade/u/home/marielj/cesm-hillslope/' + CASE_NAME
 
 '''LOAD CALIB DATA'''
@@ -65,115 +65,27 @@ def rsquared(x, y):
     slope, intercept, r_value, p_value, std_err = scipy.stats.linregress(x, y)
     return r_value**2
 
-'''
-def blackbox_clm(baseflow, fmax):
+def blackbox_clm_wte(baseflow, fmax, slopebeta, fff):
     #change parameter in netcdf file
-    target_surface_file = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth.nc'
+    target_surface_file = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pftdist_soildepth.nc'
+    target_param_file = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/clm50_params.c240105.nc'
     target_param1 = 'baseflow_scalar'
     target_param2 = 'FMAX' 
+    target_param3 = 'slopebeta'
+    target_param4 = 'fff'
     
-    #change fmax
+    #change surface parameters
     change_surf_param(target_param2, fmax, 0, target_surface_file)
+
+    #change param file
+    change_param(target_param3, slopebeta, target_param_file)
+    change_param(target_param4, fff, target_param_file)
     
     os.chdir(CASE_DIR)
     
-    #change baseflow_scalar
+    #change namelist parameters
     change_nl_param(target_param1, baseflow)
-    
-    #run case
-    pipe = subprocess.Popen(['./case.submit'], stdout=subprocess.PIPE)
-    #result = pipe.communicate()[0]
-    #print(result)
-    #print(CASE_NAME + " Run Complete")
-    
-    #time delay -- check if archived data exists, if not wait 5 more seconds
-    SCRATCH_DIR = '/glade/derecho/scratch/marielj/archive/' + CASE_NAME + '/lnd/hist/'
-    while(not os.path.exists(SCRATCH_DIR + CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')):
-        time.sleep(5)
-    
-    #find WTE data in scracth directory
-    os.chdir(SCRATCH_DIR)
-    
-    #Open data h1 data file
-    dat = xr.load_dataset(CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')
-    mod = dat.QRUNOFF.values.reshape(365)
-    meas = np.array(stream['Flow_mms'])
-    
-    #Compute correlation
-    r2_plot = rsquared(meas, mod)
-    
-    #remove data
-    os.remove(CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')
-    
-    #return average annual WTE
-    return r2_plot
 
-
-def blackbox_NDclm(baseflow, fmax, sand, clay):
-    #change parameter in netcdf file
-    target_surface_file = '/glade/work/marielj/inputdata/lnd/clm2/surfdata_map/hillslope/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pft_soildepth_mineral_nofmax.nc'
-    target_param1 = 'baseflow_scalar'
-    target_param2 = 'FMAX' 
-    target_param3 = 'PCT_CLAY'
-    target_param4 = 'PCT_SAND'
-    
-    #change fmax
-    change_surf_param(target_param2, fmax, 0, target_surface_file)
-    #Assign to the top part of the soil column (indices 0 through 7)
-    for i in range(0, 8):
-        change_surf_param(target_param3, clay, i, target_surface_file)
-        change_surf_param(target_param4, sand, i, target_surface_file)
-    
-    os.chdir(CASE_DIR)
-    
-    #change baseflow_scalar
-    change_nl_param(target_param1, baseflow)
-    
-    #run case
-    pipe = subprocess.Popen(['qcmd', '-- ./case.submit'], stdout=subprocess.PIPE)
-    #result = pipe.communicate()[0]
-    #print(result)
-    #print(CASE_NAME + " Run Complete")
-    
-    #time delay -- check if archived data exists, if not wait 5 more seconds
-    SCRATCH_DIR = '/glade/scratch/marielj/archive/' + CASE_NAME + '/lnd/hist/'
-    while(not os.path.exists(SCRATCH_DIR + CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')):
-        time.sleep(5)
-    
-    #find WTE data in scracth directory
-    os.chdir(SCRATCH_DIR)
-    
-    #Open data h1 data file
-    dat = xr.load_dataset(CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')
-    mod = dat.QRUNOFF.values.reshape(365)
-    meas = np.array(stream['Flow_mms'])
-    
-    #Compute correlation
-    r2_plot = rsquared(meas, mod)
-    
-    #remove data
-    os.remove(CASE_NAME + '.clm2.h2.2015-01-01-00000.nc')
-    
-    #return average annual WTE
-    return r2_plot
-    
-
-'''
-
-def blackbox_clm_wte(baseflow, fmax):
-    #change parameter in netcdf file
-    target_surface_file = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_pftdistribution.nc'
-    target_param1 = 'baseflow_scalar'
-    target_param2 = 'FMAX' 
-    
-    #change fmax
-    change_surf_param(target_param2, fmax, 0, target_surface_file)
-    
-    os.chdir(CASE_DIR)
-    
-    #change baseflow_scalar
-    change_nl_param(target_param1, baseflow)
-    
     #run case
     pipe = subprocess.Popen(['./case.submit'], stdout=subprocess.PIPE)
     #result = pipe.communicate()[0]
@@ -210,16 +122,18 @@ from bayes_opt.event import Events
 
 clm_optimizer = BayesianOptimization(f = blackbox_clm_wte, 
                                     pbounds = {'baseflow': (0,10),
-                                               'fmax': (0, 0.4)}, 
-                                    random_state = 45892, 
+                                               'fmax': (0.1, 0.7), 
+                                               'slopebeta' : (-10e2, 10), 
+                                               'fff' : (0.1, 5)}, 
+                                    random_state = 75832, 
                                     verbose = 0
                                     )
 #Load existing logs
-#load_logs(clm_optimizer, logs=["/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_pft_wte.json"])
-#print("New optimizer is now aware of {} points.".format(len(clm_optimizer.space)))
+load_logs(clm_optimizer, logs=["/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_seanmods_wte.json"])
+print("New optimizer is now aware of {} points.".format(len(clm_optimizer.space)))
 
 #logger object records optimization search
-logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_soilpftmods_wte.json", reset = False)
+logger = JSONLogger(path="/glade/u/home/marielj/cesm-hillslope/logs/hillslope_logs_seanmods_wte.json", reset = False)
 clm_optimizer.subscribe(Events.OPTIMIZATION_STEP, logger)
 
 
@@ -229,7 +143,7 @@ acquisition_function = UtilityFunction(kind = "ucb", kappa = 0.1)
 
 
 '''RUN OPTIMIZATION'''
-clm_optimizer.maximize(init_points = 10, n_iter = 50,
+clm_optimizer.maximize(init_points = 0, n_iter = 12,
                        aquisition_function = acquisition_function,
                        allow_duplicate_points = True)
 

@@ -2,9 +2,7 @@
 
 
 
- fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_wte_pftdistribution_calib_fmax0.1006.nc'
-
- !finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-soilpftmods.clm2.r.0301-01-01-00000.nc'
+  fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_borealpftdistribution_bedrock.nc'
 
  use_hillslope = .true.
 
@@ -24,11 +22,8 @@
 
  hist_fincl4 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
 
- !hillslope_pft_distribution_method = 'FromFile'
+ ! hillslope_soil_profile_method = 'FromFile' 
 
- !hillslope_soil_profile_method = 'FromFile' 
+ n_dom_pfts = 5
 
- n_dom_pfts = 4
-
- !baseflow_scalar = 3.2680909696932083
 / 

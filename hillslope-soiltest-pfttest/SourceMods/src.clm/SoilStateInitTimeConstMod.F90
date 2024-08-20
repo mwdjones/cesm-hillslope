@@ -186,7 +186,7 @@ contains
     character(len=*)     , intent(in)    :: nlfilename ! Namelist filename
     !
     ! !LOCAL VARIABLES:
-    integer            :: p, lev, c, l, g, j            ! indices
+    integer            :: p, lev, c, l, g, j, z         ! indices
     real(r8)           :: om_frac                       ! organic matter fraction
     real(r8)           :: om_watsat_lake = 0.9_r8       ! porosity of organic soil
     real(r8)           :: om_hksat_lake  = 0.1_r8       ! saturated hydraulic conductivity of organic soil [mm/s]
@@ -226,6 +226,9 @@ contains
     integer            :: begc, endc
     integer            :: begg, endg
     integer :: found  ! flag that equals 0 if not found and 1 if found
+
+    real, dimension(8) :: clay_values ! MWJ 4.22.2024
+    real, dimension(8) :: sand_values ! MWJ 4.22.2024
     !-----------------------------------------------------------------------
 
     begp = bounds%begp; endp= bounds%endp
@@ -496,6 +499,9 @@ contains
                 ! This is separated into sections for non-perturbation and perturbation of sand/clay
                 ! because the perturbation code is not bfb when sand_pf=clay_pf=0. This occurs because
                 ! of a divide and then a multiply in the code.
+                clay_values = (/11.76, 11.78, 12.84, 14.67, 19.52, 23.34, 28.76, 30.54/) !MWJ 4.22.2024
+                sand_values = (/63.4, 63.88, 63.86, 63.64, 60.75, 59.34, 55.11, 53.95/)
+                
                 if (params_inst%sand_pf == 0._r8 .and. params_inst%clay_pf == 0._r8) then
                    soilstate_inst%cellsand_col(c,lev) = sand
                    soilstate_inst%cellclay_col(c,lev) = clay
@@ -518,8 +524,16 @@ contains
                    if((c-begc+1) == 3) then 
                       !Upland
                       om_frac = 0 * om_frac
-                      clay = clay + 24
-                      sand = sand + 56
+                      do z = 1,nlevgrnd
+                          if(z > 8) then
+                              clay = 35.65
+                              sand = 48.32
+                          endif
+                          if(z < 9) then
+                              clay = clay_values(z)
+                              sand = sand_values(z)
+                          endif
+                      end do
                    endif
 
                 else

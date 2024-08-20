@@ -8,14 +8,14 @@
  crop_fsat_equals_zero = .false.
  do_sno_oc = .false.
  downscale_hillslope_meteorology = .true.
- finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-soilpftmods.clm2.r.2311-01-01-00000.nc'
+ finidat = '/glade/campaign/cesm/cesmdata/inputdata/lnd/clm2/initdata_map/clmi.I2000Clm50BgcCrop.2011-01-01.1.9x2.5_gx1v7_gl4_simyr2000_c190312.nc'
  for_testing_no_crop_seed_replenishment = .false.
  for_testing_run_ncdiopio_tests = .false.
  for_testing_use_repr_structure_pool = .false.
  for_testing_use_second_grain_pool = .false.
  fsnowaging = '/glade/campaign/cesm/cesmdata/inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
  fsnowoptics = '/glade/campaign/cesm/cesmdata/inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c013122.nc'
- fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_pftdistribution.nc'
+ fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/dont-change/fromSean/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pftdist_soildepth.nc'
  glc_do_dynglacier = .false.
  glc_snow_persistence_max_days = 0
  h2osno_max = 10000.0
@@ -32,7 +32,7 @@
  irrigate = .false.
  maxpatch_glc = 10
  n_dom_landunits = 0
- n_dom_pfts = 4
+ n_dom_pfts = 5
  nlevsno = 12
  nsegspc = 35
  o3_veg_stress_method = 'unset'
@@ -279,7 +279,7 @@
 !#--------------------------------------------------------------------------------------------------------------------------
 !# lnd_in:: Comment:
 !# This namelist was created using the following command-line:
-!#     /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/CLM build-namelist -cimeroot /glade/u/home/marielj/ctsm-hillslope_hydrology/cime -infile /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/clmconf/namelist -csmdata /glade/campaign/cesm/cesmdata/inputdata -inputdata /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=20110101 /  -use_case 2000_control -res CLM_USRDAT -clm_usr_name 1x1pt_US-MBP -clm_start_type default -envxml_dir /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest -configuration clm -structure standard -glc_nec 10 -co2_ppmv 367.0 -co2_type constant -config /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc sp -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_CRUv7
+!#     /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/CLM build-namelist -cimeroot /glade/u/home/marielj/ctsm-hillslope_hydrology/cime -infile /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/clmconf/namelist -csmdata /glade/campaign/cesm/cesmdata/inputdata -inputdata /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=20040101 /  -use_case 2000_control -res CLM_USRDAT -clm_usr_name 1x1pt_US-MBP -clm_start_type default -envxml_dir /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest -configuration clm -structure standard -glc_nec 10 -co2_ppmv 367.0 -co2_type constant -config /glade/u/home/marielj/cesm-hillslope/hillslope-soiltest-pfttest/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc sp -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_CRUv7
 !# 
 !# For help on options use: /glade/u/home/marielj/ctsm-hillslope_hydrology/bld/CLM build-namelist -help
 !#--------------------------------------------------------------------------------------------------------------------------

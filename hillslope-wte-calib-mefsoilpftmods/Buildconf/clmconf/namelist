@@ -1,0 +1,29 @@
+&comp_inparm 
+
+ fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-param-files/surfdata_lagg_hillslope_wte_calib_mefsoilpftmods.nc'
+
+ finidat = '/glade/u/home/marielj/cesm-hillslope/spinup-runs/restarts/derecho-spinup-fullsoilpftmods.clm2.r.0201-01-01-00000.nc'
+
+ paramfile = '/glade/u/home/marielj/cesm-hillslope/calib-param-files/clm50_params.c240105_hillslope_wte_calib_mefsoilpftmods.nc'
+
+ use_hillslope = .true.
+
+ use_hillslope_routing = .true.
+
+ use_init_interp = .true.
+
+ hist_nhtfrq = 0,0,-24,-24
+
+ hist_mfilt = 1,1,365,365
+
+ hist_dov2xy = .true.,.false.,.true.,.false.
+
+ hist_fincl2 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl3 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl4 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ baseflow_scalar = 8.854955010066057
+
+/ 

@@ -587,18 +587,24 @@ contains
     !
     ! !LOCAL VARIABLES:
     integer :: p,c    ! indices
-    integer :: p1, p2, p3
+    integer :: p1, p2, p3, p4
     ! desired pft types
-    integer, parameter :: p1_col1=12 !lagg - arctic grass
-    integer, parameter :: p2_col1=10 !lagg - shrub
-    integer, parameter :: p3_col1=1  !lagg - conif tree
-    integer, parameter :: p1_col2=12 !bog - arctic grass
-    integer, parameter :: p2_col2=1  !bog - conif tree
-    integer, parameter :: p1_col3=12 !upland - arctic grass
-    integer, parameter :: p2_col3=7  !upland - deciduous tree
-    integer, parameter :: p3_col3=1  !upland - conif tree
+    integer, parameter :: p1_col1=13 !lagg - grass
+    integer, parameter :: p2_col1=11 !lagg - shrub (boreal)
+    integer, parameter :: p3_col1=2  !lagg - conif tree (boreal)
+    integer, parameter :: p4_col1=3  !Lagg - decid needleleaf tree (boreal)
+    
+    integer, parameter :: p1_col2=13 !bog - grass
+    integer, parameter :: p2_col2=2  !bog - conif tree (boreal)
+    integer, parameter :: p3_col2=11 !bog - shrub (boreal
+    integer, parameter :: p4_col2=3  !bog - decid needleleaf tree (boreal)
+    
+    integer, parameter :: p1_col3=13 !upland - grass
+    integer, parameter :: p2_col3=8  !upland - deciduous tree (boreal)
+    integer, parameter :: p3_col3=2  !upland - conif tree (boreal)
+    integer, parameter :: p4_col3=11 !bog - shrub (boreal
     real(r8) :: sum_wtcol, sum_wtlun, sum_wtgrc
-    real(r8) :: frac1, frac2, frac3
+    real(r8) :: frac1, frac2, frac3, frac4
 
     !------------------------------------------------------------------------
 
@@ -619,42 +625,54 @@ contains
              p1 = ispval
              p2 = ispval
              p3 = ispval
+             p4 = ispval
              ! locate patch index of desired pft
              do p = col%patchi(c), col%patchf(c)
                 if(patch%itype(p) == p1_col1) p1 = p
                 if(patch%itype(p) == p2_col1) p2 = p
                 if(patch%itype(p) == p3_col1) p3 = p
+                if(patch%itype(p) == p4_col1) p4 = p
              enddo
-             frac1 = 0.35_r8
-             frac2 = 0.60_r8
-             frac3 = (1.0_r8 - frac1 - frac2)
+             frac1 = 0.15_r8 !grass
+             frac2 = 0.45_r8 !shrub
+             frac3 = 0.20_r8 !conif tree
+             frac4 = (1.0_r8 - frac1 - frac2 - frac3) !decid needleleaf tree
           endif
           ! column 2 - bog
           if((c-bounds%begc+1) == 2) then 
              p1 = ispval
              p2 = ispval
+             p3 = ispval
+             p4 = ispval
              ! locate patch index of desired pft
              do p = col%patchi(c), col%patchf(c)
                 if(patch%itype(p) == p1_col2) p1 = p
                 if(patch%itype(p) == p2_col2) p2 = p
+                if(patch%itype(p) == p3_col2) p3 = p
+                if(patch%itype(p) == p4_col2) p4 = p
              enddo
-             frac1 = 0.5_r8
-             frac2 = (1.0_r8 - frac1)
+             frac1 = 0.3_r8 !grass
+             frac2 = 0.35_r8 !conif tree
+             frac3 = 0.20_r8 !shrub
+             frac4 = (1.0_r8 - frac1 - frac2 - frac3) !decid needle tree
           endif
           ! column 3 - upland
           if((c-bounds%begc+1) == 3) then 
              p1 = ispval
              p2 = ispval
              p3 = ispval
+             p4 = ispval
              ! locate patch index of desired pft
              do p = col%patchi(c), col%patchf(c)
                 if(patch%itype(p) == p1_col3) p1 = p
                 if(patch%itype(p) == p2_col3) p2 = p
                 if(patch%itype(p) == p3_col3) p3 = p
+                if(patch%itype(p) == p4_col3) p4 = p
              enddo
-             frac1 = 0.10_r8
-             frac2 = 0.60_r8
-             frac3 = (1.0_r8 - frac1 - frac2)
+             frac1 = 0.05_r8 !grass
+             frac2 = 0.55_r8 !decid tree
+             frac3 = 0.05_r8 !shrub
+             frac4 = (1.0_r8 - frac1 - frac2 - frac3) !conif tree
           endif
           
           ! reweight 1st patch
@@ -669,6 +687,10 @@ contains
           patch%wtcol(p3) = sum_wtcol * frac3
           patch%wtlunit(p3) = sum_wtlun * frac3
           patch%wtgcell(p3) = sum_wtgrc * frac3
+          ! reweight 4th patch
+          patch%wtcol(p4) = sum_wtcol * frac4
+          patch%wtlunit(p4) = sum_wtlun * frac4
+          patch%wtgcell(p4) = sum_wtgrc * frac4
 
        end if
     enddo    ! end loop c
@@ -724,7 +746,7 @@ contains
        call ncd_pio_openfile (ncid, locfn, 0)
 
        allocate(fhillslope_in(bounds%begg:bounds%endg,max_columns_hillslope))
-       call ncd_io(ncid=ncid, varname='hillslope_bedrock_depth', flag='read', data=fhillslope_in, dim1name=grlnd, readvar=readvar)
+       call ncd_io(ncid=ncid, varname='h_bedrock', flag='read', data=fhillslope_in, dim1name=grlnd, readvar=readvar)
        if (masterproc .and. .not. readvar) then
           call endrun( 'ERROR:: soil_profile_method = "FromFile", but hillslope_bedrock not found on surface data set.'//errmsg(sourcefile, __LINE__) )
        end if

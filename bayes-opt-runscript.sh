@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -N bayes-opt
 #PBS -A UMIN0008
-#PBS -l walltime=12:00:00
+#PBS -l walltime=5:00:00
 #PBS -q main@desched1
 #PBS -j oe
 #PBS -k eod

@@ -1,0 +1,25 @@
+&comp_inparm 
+
+ fsurdat = '/glade/u/home/marielj/cesm-hillslope/calib-surf-files/dont-change/fromSean/surfdata_1x1pt_US-MBP_hist_16pfts_Irrig_CMIP6_simyr2000_HAND_3_col_hillslope_lagg_pftdist_soildepth.nc'
+
+ use_hillslope = .true.
+
+ use_hillslope_routing = .true.
+
+ !use_init_interp = .true.
+
+ hist_nhtfrq = 0,0,-24,-24
+
+ hist_mfilt = 1,1,365,365
+
+ hist_dov2xy = .true.,.false.,.true.,.false.
+
+ hist_fincl2 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl3 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ hist_fincl4 = 'RAIN', 'H2OSNO', 'QSOIL', 'QVEGT', 'QSNOMELT', 'QRUNOFF', 'ZWT', 'ZWT_PERCH', 'SNOW', 'TSA', 'SOILICE', 'QINFL', 'QOVER', 'H2OSOI', 'TSOI', 'FSAT', 'FSNO', 'QICE', 'TREFMNAV', 'TREFMXAV'
+
+ n_dom_pfts = 5
+
+/ 

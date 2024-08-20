@@ -1,0 +1,50 @@
+Generating namelists for /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods
+  2024-08-19 12:07:35 atm 
+Create namelist for component datm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cdeps/datm/cime_config/buildnml
+copying /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/Buildconf/datmconf/datm_in -> /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run
+copying /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/Buildconf/datmconf/datm.streams.xml -> /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run
+  2024-08-19 12:07:36 lnd 
+Create namelist for component clm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime_config/buildnml
+  2024-08-19 12:07:39 ice 
+Create namelist for component sice
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sice/cime_config/buildnml
+  2024-08-19 12:07:39 ocn 
+Create namelist for component socn
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/socn/cime_config/buildnml
+  2024-08-19 12:07:39 rof 
+Create namelist for component srof
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/srof/cime_config/buildnml
+  2024-08-19 12:07:39 glc 
+Create namelist for component sglc
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sglc/cime_config/buildnml
+  2024-08-19 12:07:39 wav 
+Create namelist for component swav
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/swav/cime_config/buildnml
+  2024-08-19 12:07:39 esp 
+Create namelist for component sesp
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sesp/cime_config/buildnml
+  2024-08-19 12:07:39 cpl 
+Create namelist for component drv
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cmeps/cime_config/buildnml
+Writing nuopc_runconfig for components ['CPL', 'ATM', 'LND']
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/drv_flds_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/drv_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/lnd_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/datm_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/nuopc.runconfig -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/datm.streams.xml -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/nuopc.runseq -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/CaseDocs
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/campaign/cesm/cesmdata/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+cpl_logfile /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/drv.log.5740349.desched1.240819-120734
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-seanmods/run/ESMF_Profile.summary -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-seanmods/timing/cesm.ESMF_Profile.summary.5740349.desched1.240819-120734
+check for resubmit
+dout_s True 
+mach derecho 
+resubmit_num 0
