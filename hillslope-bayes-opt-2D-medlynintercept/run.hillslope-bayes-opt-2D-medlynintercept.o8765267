@@ -1,0 +1,50 @@
+Generating namelists for /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept
+  2025-03-11 14:35:43 atm 
+Create namelist for component datm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cdeps/datm/cime_config/buildnml
+copying /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/Buildconf/datmconf/datm_in -> /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run
+copying /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/Buildconf/datmconf/datm.streams.xml -> /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run
+  2025-03-11 14:35:43 lnd 
+Create namelist for component clm
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime_config/buildnml
+  2025-03-11 14:35:44 ice 
+Create namelist for component sice
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sice/cime_config/buildnml
+  2025-03-11 14:35:44 ocn 
+Create namelist for component socn
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/socn/cime_config/buildnml
+  2025-03-11 14:35:44 rof 
+Create namelist for component srof
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/srof/cime_config/buildnml
+  2025-03-11 14:35:44 glc 
+Create namelist for component sglc
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sglc/cime_config/buildnml
+  2025-03-11 14:35:44 wav 
+Create namelist for component swav
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/swav/cime_config/buildnml
+  2025-03-11 14:35:44 esp 
+Create namelist for component sesp
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/cime/CIME/non_py/src/components/stub_comps_nuopc/sesp/cime_config/buildnml
+  2025-03-11 14:35:44 cpl 
+Create namelist for component drv
+   Calling /glade/u/home/marielj/ctsm-hillslope_hydrology/components/cmeps/cime_config/buildnml
+Writing nuopc_runconfig for components ['CPL', 'ATM', 'LND']
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/drv_flds_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/drv_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/lnd_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/datm_in -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/nuopc.runconfig -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/datm.streams.xml -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/nuopc.runseq -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/CaseDocs
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/campaign/cesm/cesmdata/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpiexec  --label  --line-buffer  -n 1 /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+cpl_logfile /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/drv.log.8765267.desched1.250311-143542
+copying /glade/derecho/scratch/marielj/hillslope-bayes-opt-2D-medlynintercept/run/ESMF_Profile.summary -> /glade/u/home/marielj/cesm-hillslope/hillslope-bayes-opt-2D-medlynintercept/timing/cesm.ESMF_Profile.summary.8765267.desched1.250311-143542
+check for resubmit
+dout_s True 
+mach derecho 
+resubmit_num 0
